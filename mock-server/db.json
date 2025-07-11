@@ -77,6 +77,12 @@
       "moduleDesc": "Employee Log",
       "path": "/employee-log",
       "icon": "about"
+    },
+    {
+      "moduleCode": "14",
+      "moduleDesc": "Suspended Delivery",
+      "path": "/suspended-delivery",
+      "icon": "about"
     }
   ],
   "comments": [
