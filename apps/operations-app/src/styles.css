@@ -1,0 +1,14 @@
+@import '@radix-ui/themes/styles.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: gray;
+  overflow: hidden;
+} */

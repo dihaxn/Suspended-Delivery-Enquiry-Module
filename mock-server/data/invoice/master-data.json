@@ -1,0 +1,2338 @@
+{
+  "durationList": [
+    {
+      "value": "yesterday",
+      "label": "Yesterday"
+    },
+    {
+      "value": "today",
+      "label": "Today"
+    },
+    {
+      "value": "lastweek",
+      "label": "Last Week"
+    },
+    {
+      "value": "lastmonth",
+      "label": "Last Month"
+    },
+    {
+      "value": "last3month",
+      "label": "Last 3 Months"
+    },
+    {
+      "value": "last6month",
+      "label": "Last 6 Months"
+    },
+    {
+      "value": "last12month",
+      "label": "Last 12 Months"
+    }
+  ],
+  "customerGroup": [
+    {
+      "value": "100",
+      "label": "100 BURGERS"
+    },
+    {
+      "value": "183",
+      "label": "1834 HOSPITALITY GROUP"
+    },
+    {
+      "value": "26",
+      "label": "GROUP 2617"
+    },
+    {
+      "value": "300",
+      "label": "300 GRAMS"
+    },
+    {
+      "value": "400",
+      "label": "400 GRADI"
+    },
+    {
+      "value": "4FI",
+      "label": "4 FINGERS CRISPY CHICKEN"
+    },
+    {
+      "value": "5BO",
+      "label": "5 BOROUGHS"
+    },
+    {
+      "value": "AA",
+      "label": "ACCOR"
+    },
+    {
+      "value": "AAD",
+      "label": "DARWIN ACCOR"
+    },
+    {
+      "value": "AAM",
+      "label": "ACCOR MANTRA"
+    },
+    {
+      "value": "ACG",
+      "label": "ACPG GROUP"
+    },
+    {
+      "value": "ACS",
+      "label": "AUSTRALIAN CATERING SERVICES"
+    },
+    {
+      "value": "ADN",
+      "label": "AUSTRALIAN DEFENCE NAVY (DARWIN)"
+    },
+    {
+      "value": "ADS",
+      "label": "ADVANCED CATERING SYSTEMS"
+    },
+    {
+      "value": "ADV",
+      "label": "ADVANCED CATERING SYS 2 PTY LTD"
+    },
+    {
+      "value": "AF",
+      "label": "DNATA CATERING"
+    },
+    {
+      "value": "AFA",
+      "label": "AFA Corp"
+    },
+    {
+      "value": "AG",
+      "label": "ARMADA GROUP - NOT ACTIVE"
+    },
+    {
+      "value": "AH",
+      "label": "ALH GROUP"
+    },
+    {
+      "value": "AHD",
+      "label": "DARWIN ALH GROUP"
+    },
+    {
+      "value": "AHW",
+      "label": "ALH WHOLESALER"
+    },
+    {
+      "value": "AL",
+      "label": "ALLIED MILLS"
+    },
+    {
+      "value": "ALA",
+      "label": "ALASEEL "
+    },
+    {
+      "value": "ALB",
+      "label": "ALBEES FAMILY GROUP"
+    },
+    {
+      "value": "ALI",
+      "label": "ALASEEL MANUFACTURING"
+    },
+    {
+      "value": "ALM",
+      "label": "ALEMRE GROUP"
+    },
+    {
+      "value": "AM",
+      "label": "ZONE BOWLING CENTRES"
+    },
+    {
+      "value": "AMD",
+      "label": "DARWIN ZONE BOWLING CENTRES"
+    },
+    {
+      "value": "AME",
+      "label": "AMERICAN FOOD GROUP PTY LTD"
+    },
+    {
+      "value": "AND",
+      "label": "ANDONIS CAFE GROUP"
+    },
+    {
+      "value": "ANY",
+      "label": "ANYDAY"
+    },
+    {
+      "value": "ANZ",
+      "label": "VENUES LIVE"
+    },
+    {
+      "value": "AO",
+      "label": "ADELAIDE OVAL GROUP"
+    },
+    {
+      "value": "APC",
+      "label": "APCO GROUP"
+    },
+    {
+      "value": "APF",
+      "label": "AUSTRALIAN PUB FUND"
+    },
+    {
+      "value": "APP",
+      "label": "APPLEJACK HOSPITALITY"
+    },
+    {
+      "value": "AR",
+      "label": "AIRPORT RETAIL GROUP"
+    },
+    {
+      "value": "ARC",
+      "label": "ARCHIE BROS AUSTRALIA PTY LTD"
+    },
+    {
+      "value": "ARG",
+      "label": "AIRPORT RETAIL ENTERPRISES"
+    },
+    {
+      "value": "ASU",
+      "label": "ASUKA GROUP"
+    },
+    {
+      "value": "AT",
+      "label": "AT HOTELS GRP"
+    },
+    {
+      "value": "ATC",
+      "label": "AUSTRALIAN TURF CLUB"
+    },
+    {
+      "value": "ATH",
+      "label": "ATHENA HOSPITALITY"
+    },
+    {
+      "value": "ATL",
+      "label": "ATLANTIC GROUP"
+    },
+    {
+      "value": "AV",
+      "label": "ADV CATERING - NON CURRENT"
+    },
+    {
+      "value": "AVC",
+      "label": "DO NOT USE - AUST VENUE CO"
+    },
+    {
+      "value": "AVD",
+      "label": "DARWIN AUSTRALIAN VENUE CO"
+    },
+    {
+      "value": "AVI",
+      "label": "AUSTRALIAN VENUE CO INDIVIDUAL"
+    },
+    {
+      "value": "AVM",
+      "label": "AUSTRALIAN VENUE MANAGEMENT PTY LTD"
+    },
+    {
+      "value": "AVO",
+      "label": "AVC OPERATIONS PTY LTD"
+    },
+    {
+      "value": "AYA",
+      "label": "AYAM RIA GROUP"
+    },
+    {
+      "value": "BA",
+      "label": "BARREAU HOTEL GROUP"
+    },
+    {
+      "value": "BAG",
+      "label": "BURGERS ANONYMOUS GROUP"
+    },
+    {
+      "value": "BAL",
+      "label": "BALFOURS & SAN REMO"
+    },
+    {
+      "value": "BAN",
+      "label": "BAN BAN GROUP"
+    },
+    {
+      "value": "BAO",
+      "label": "BAO BROTHERS GROUP"
+    },
+    {
+      "value": "BAS",
+      "label": "BASE BACKPACKERS P/L"
+    },
+    {
+      "value": "BB",
+      "label": "BILLY BAXTERS"
+    },
+    {
+      "value": "BBU",
+      "label": "BEACH BURRITO"
+    },
+    {
+      "value": "BCG",
+      "label": "BURGER CHEF GROUP"
+    },
+    {
+      "value": "BD",
+      "label": "BAKERS DELIGHT"
+    },
+    {
+      "value": "BEA",
+      "label": "BEAUMONDE CATERING"
+    },
+    {
+      "value": "BEE",
+      "label": "BEER DELUXE PTY LTD"
+    },
+    {
+      "value": "BEL",
+      "label": "BELLUCIS"
+    },
+    {
+      "value": "BEN",
+      "label": "BENNYS AMERICAN BURGER"
+    },
+    {
+      "value": "BET",
+      "label": "BETTYS BURGER"
+    },
+    {
+      "value": "BF",
+      "label": "BUY FORCE GROUP"
+    },
+    {
+      "value": "BG",
+      "label": "BG/MLF"
+    },
+    {
+      "value": "BGM",
+      "label": "B & G MANAGEMENT"
+    },
+    {
+      "value": "BGR",
+      "label": "BURGER ROAD"
+    },
+    {
+      "value": "BH",
+      "label": "BP HOBSON ST H/O-SPARGO GRP"
+    },
+    {
+      "value": "BHB",
+      "label": "BROKEN HEART BURGER CLUB"
+    },
+    {
+      "value": "BHC",
+      "label": "BELLES HOT CHICKEN"
+    },
+    {
+      "value": "BIG",
+      "label": "BIG ROCK HOSPITALITY"
+    },
+    {
+      "value": "BJB",
+      "label": "BJBAC GROUP"
+    },
+    {
+      "value": "BKY",
+      "label": "BBQ K YOONS GROUP"
+    },
+    {
+      "value": "BL",
+      "label": "BLACK RHINO GROUP"
+    },
+    {
+      "value": "BLA",
+      "label": "BLAZIN GRILL"
+    },
+    {
+      "value": "BLG",
+      "label": "BELGRAVIA LEISURE GROUP"
+    },
+    {
+      "value": "BLS",
+      "label": "BLACK RHINO SA"
+    },
+    {
+      "value": "BLU",
+      "label": "BLUE FIT"
+    },
+    {
+      "value": "BLZ",
+      "label": "BELLEZZA GROUP"
+    },
+    {
+      "value": "BO",
+      "label": "BONDI PIZZA"
+    },
+    {
+      "value": "BOA",
+      "label": "BOATHOUSE COLLECTIVE"
+    },
+    {
+      "value": "BOH",
+      "label": "BOATHOUSE GROUP"
+    },
+    {
+      "value": "BOM",
+      "label": "BONBONS"
+    },
+    {
+      "value": "BON",
+      "label": "BON CHON"
+    },
+    {
+      "value": "BOS",
+      "label": "BOSS BURGER"
+    },
+    {
+      "value": "BOU",
+      "label": "BOUNCE"
+    },
+    {
+      "value": "BP",
+      "label": "BP RELIANCE PETROLEUM"
+    },
+    {
+      "value": "BPC",
+      "label": "BP CENTRAL COMBINED GROUP"
+    },
+    {
+      "value": "BR",
+      "label": "BIBS & RIBS"
+    },
+    {
+      "value": "BRD",
+      "label": "BRODIES CHICKEN & BURGERS"
+    },
+    {
+      "value": "BRE",
+      "label": "BREAD & MEAT CO"
+    },
+    {
+      "value": "BRF",
+      "label": "BREADTOP"
+    },
+    {
+      "value": "BRG",
+      "label": "BURGERD"
+    },
+    {
+      "value": "BRU",
+      "label": "BRUNELLI GRP"
+    },
+    {
+      "value": "BSM",
+      "label": "BSGM HOSPITALITY"
+    },
+    {
+      "value": "BT",
+      "label": "BURGERTORY"
+    },
+    {
+      "value": "BUB",
+      "label": "BURRITO BAR"
+    },
+    {
+      "value": "BUC",
+      "label": "BUCKING BULL"
+    },
+    {
+      "value": "BUD",
+      "label": "DARWIN BURGER URGE GROUP"
+    },
+    {
+      "value": "BUG",
+      "label": "BURGER URGE GROUP"
+    },
+    {
+      "value": "BUL",
+      "label": "BURGER LOVE"
+    },
+    {
+      "value": "BUN",
+      "label": "BETWEEN 2 BUNS"
+    },
+    {
+      "value": "BUR",
+      "label": "BURGER PROJECT"
+    },
+    {
+      "value": "BUZ",
+      "label": "BUZA CHICKEN"
+    },
+    {
+      "value": "CA",
+      "label": "CASTELLO GROUP"
+    },
+    {
+      "value": "CAD",
+      "label": "DARWIN CATER CARE GROUP"
+    },
+    {
+      "value": "CAF",
+      "label": "CAFE 63"
+    },
+    {
+      "value": "CAL",
+      "label": "CALOUNDRA RSL"
+    },
+    {
+      "value": "CAP",
+      "label": "CAPRICHO"
+    },
+    {
+      "value": "CAR",
+      "label": "CARTER MILLS"
+    },
+    {
+      "value": "CAT",
+      "label": "CATER CARE GROUP"
+    },
+    {
+      "value": "CB",
+      "label": "COOK BEAUMONT"
+    },
+    {
+      "value": "CC",
+      "label": "CHICKENS CHOICE COLES"
+    },
+    {
+      "value": "CCD",
+      "label": "DARWIN CHICKENS CHOICE COLES"
+    },
+    {
+      "value": "CE",
+      "label": "CHICKEN EXPRESS"
+    },
+    {
+      "value": "CEX",
+      "label": "CEX GROUP"
+    },
+    {
+      "value": "CF",
+      "label": "COLLINGWOOD F.C."
+    },
+    {
+      "value": "CG",
+      "label": "CHICKEN GOURMET"
+    },
+    {
+      "value": "CH",
+      "label": "CHICKOS"
+    },
+    {
+      "value": "CHA",
+      "label": "CHARGRILL GROUP"
+    },
+    {
+      "value": "CHE",
+      "label": "CHEF LEGENDA"
+    },
+    {
+      "value": "CHG",
+      "label": "COMPLETE HOSPITALITY GROUP"
+    },
+    {
+      "value": "CHI",
+      "label": "CHIPMUNKS"
+    },
+    {
+      "value": "CHN",
+      "label": "CHINA BAR"
+    },
+    {
+      "value": "CHQ",
+      "label": "CATERING HQ LOGISTICS"
+    },
+    {
+      "value": "CHT",
+      "label": "CHICKEN TREAT"
+    },
+    {
+      "value": "CI",
+      "label": "CARRICK INSTITUTE"
+    },
+    {
+      "value": "CII",
+      "label": "CITI CLUB"
+    },
+    {
+      "value": "CIN",
+      "label": "CHILLI INDIA"
+    },
+    {
+      "value": "CIT",
+      "label": "CITY OF GOLD COAST"
+    },
+    {
+      "value": "CJ",
+      "label": "C J FOOD ENTERPRISE PTY LTD"
+    },
+    {
+      "value": "CJC",
+      "label": "CARLS JNR - CCST"
+    },
+    {
+      "value": "CJQ",
+      "label": "CARLS JNR - QLD"
+    },
+    {
+      "value": "CJS",
+      "label": "CARLS JNR - SA"
+    },
+    {
+      "value": "CJV",
+      "label": "CARLS JNR - VIC"
+    },
+    {
+      "value": "CKZ",
+      "label": "CHATKAZZ"
+    },
+    {
+      "value": "CL",
+      "label": "COLONIAL LEISURE GROUP"
+    },
+    {
+      "value": "CLN",
+      "label": "COLONIAL NO REBATES"
+    },
+    {
+      "value": "CMD",
+      "label": "COMPASS DARWIN"
+    },
+    {
+      "value": "CMM",
+      "label": "COMPASS METRO"
+    },
+    {
+      "value": "CMP",
+      "label": "CCMG MT PRITCHARD PTY LTD"
+    },
+    {
+      "value": "CMW",
+      "label": "COMPASS WSU"
+    },
+    {
+      "value": "CMZ",
+      "label": "COMPASS ZOO"
+    },
+    {
+      "value": "CO",
+      "label": "COOPERS"
+    },
+    {
+      "value": "COC",
+      "label": "COCO CUBANO"
+    },
+    {
+      "value": "COH",
+      "label": "COMMERCIAL HOSPITALITY GROUP"
+    },
+    {
+      "value": "COL",
+      "label": "COLLEGIANS"
+    },
+    {
+      "value": "COO",
+      "label": "COOLUM RESORT"
+    },
+    {
+      "value": "COR",
+      "label": "CORBETT & CLAUDE"
+    },
+    {
+      "value": "COS",
+      "label": "COSTCO"
+    },
+    {
+      "value": "CP",
+      "label": "CROCS PLAYCENTRES"
+    },
+    {
+      "value": "CR",
+      "label": "RAIDERS"
+    },
+    {
+      "value": "CRC",
+      "label": "CREATE CONSULTANTS"
+    },
+    {
+      "value": "CRO",
+      "label": "CROWN CASINO"
+    },
+    {
+      "value": "CRT",
+      "label": "CRAFTY STREET EATS GROUP"
+    },
+    {
+      "value": "CSK",
+      "label": "COMISKEY GROUP"
+    },
+    {
+      "value": "CT",
+      "label": "COOLABAH TREE"
+    },
+    {
+      "value": "CTZ",
+      "label": "CATEREZ"
+    },
+    {
+      "value": "CV",
+      "label": "CORRECTIONS VICTORIA"
+    },
+    {
+      "value": "CX",
+      "label": "CHOPSTIX"
+    },
+    {
+      "value": "CXA",
+      "label": "AMPOL CORPORATE"
+    },
+    {
+      "value": "CXI",
+      "label": "CALTEX INDEPENDENT"
+    },
+    {
+      "value": "DA",
+      "label": "DARLING GROUP"
+    },
+    {
+      "value": "DAS",
+      "label": "D ASPORTO"
+    },
+    {
+      "value": "DAW",
+      "label": "DAWG BOYS"
+    },
+    {
+      "value": "DC",
+      "label": "DCAT GROUP"
+    },
+    {
+      "value": "DD",
+      "label": "DRINK AND DINE"
+    },
+    {
+      "value": "DDE",
+      "label": "DARWIN DELAWARE GROUP"
+    },
+    {
+      "value": "DE",
+      "label": "DE ANGELIS GROUP"
+    },
+    {
+      "value": "DED",
+      "label": "DEDE'S"
+    },
+    {
+      "value": "DEE",
+      "label": "DEEGAN HOTEL - NOT ACTIVE"
+    },
+    {
+      "value": "DEL",
+      "label": "DELAWARE GROUP"
+    },
+    {
+      "value": "DEP",
+      "label": "D ELEPHANT THAI"
+    },
+    {
+      "value": "DES",
+      "label": "DESSERT STORY GROUP"
+    },
+    {
+      "value": "DF",
+      "label": "DEFRAGA GRP"
+    },
+    {
+      "value": "DG",
+      "label": "DOMINION HOTEL GROUP"
+    },
+    {
+      "value": "DMC",
+      "label": "DELAWARE MCG GROUP"
+    },
+    {
+      "value": "DOM",
+      "label": "DOME COFFEE"
+    },
+    {
+      "value": "DR",
+      "label": "DREAMWORLD"
+    },
+    {
+      "value": "DRO",
+      "label": "DELIVEROO GROUP"
+    },
+    {
+      "value": "DTF",
+      "label": "DIN TAI FUNG"
+    },
+    {
+      "value": "EA",
+      "label": "EASTLAKE FOOTBALL CLUB LIMITED"
+    },
+    {
+      "value": "EDC",
+      "label": "EAT DRINK CHILL GROUP"
+    },
+    {
+      "value": "EDZ",
+      "label": "EDZ GROUP"
+    },
+    {
+      "value": "EG",
+      "label": "EAT GANGNAM GROUP"
+    },
+    {
+      "value": "EI",
+      "label": "EVENT INDEPENDENT"
+    },
+    {
+      "value": "EL",
+      "label": "EL JANNAH"
+    },
+    {
+      "value": "ELI",
+      "label": "EL JANNAH MANUFACTURING"
+    },
+    {
+      "value": "EM",
+      "label": "EMIRATES LEISURE RETAIL"
+    },
+    {
+      "value": "END",
+      "label": "ENDEAVOUR PETROLEUM"
+    },
+    {
+      "value": "ESD",
+      "label": "ESS COMPASS DEFENCE"
+    },
+    {
+      "value": "ESR",
+      "label": "ESS COMPASS REMOTE"
+    },
+    {
+      "value": "EU",
+      "label": "EUMUNDI GROUP HOTELS"
+    },
+    {
+      "value": "EUR",
+      "label": "EUREKA GROUP"
+    },
+    {
+      "value": "EVI",
+      "label": "EVIVE"
+    },
+    {
+      "value": "FAL",
+      "label": "FALVEYS"
+    },
+    {
+      "value": "FAR",
+      "label": "FAR NORTH HOTELS"
+    },
+    {
+      "value": "FB",
+      "label": "FLIPP BURGERS"
+    },
+    {
+      "value": "FC",
+      "label": "FAT CHICKENS"
+    },
+    {
+      "value": "FDD",
+      "label": "DARWIN AAFCANS"
+    },
+    {
+      "value": "FDS",
+      "label": "AAFCANS"
+    },
+    {
+      "value": "FE",
+      "label": "FEROS GROUP"
+    },
+    {
+      "value": "FF",
+      "label": "FLAMES & FLAVOUR"
+    },
+    {
+      "value": "FI",
+      "label": "FIORELLI GROUP"
+    },
+    {
+      "value": "FIS",
+      "label": "FISHERMANS CO-OP"
+    },
+    {
+      "value": "FK",
+      "label": "FALAFEL KITCHEN"
+    },
+    {
+      "value": "FL",
+      "label": "FISH LIQUOR GROUP"
+    },
+    {
+      "value": "FME",
+      "label": "FONDA MEXICAN NON MLF"
+    },
+    {
+      "value": "FOR",
+      "label": "FORTITUDO GROUP"
+    },
+    {
+      "value": "FP",
+      "label": "4 PINES BREWING"
+    },
+    {
+      "value": "FR",
+      "label": "FRATELLI FRESH HOLDINGS PTY LTD"
+    },
+    {
+      "value": "FRA",
+      "label": "FRANCIS GROUP"
+    },
+    {
+      "value": "FRC",
+      "label": "FRESH COLLECTIVE"
+    },
+    {
+      "value": "GAM",
+      "label": "GAMI CHICKEN"
+    },
+    {
+      "value": "GAT",
+      "label": "GATE GOURMET GROUP"
+    },
+    {
+      "value": "GB",
+      "label": "GOOD BEER CO."
+    },
+    {
+      "value": "GD",
+      "label": "GALACTIC DONUTS"
+    },
+    {
+      "value": "GE",
+      "label": "GETTA BURGER"
+    },
+    {
+      "value": "GEM",
+      "label": "GEMA GROUP"
+    },
+    {
+      "value": "GEN",
+      "label": "GENNARI GROUP"
+    },
+    {
+      "value": "GFC",
+      "label": "GEELONG FOOTBALL CLUB - NOT ACTIVE"
+    },
+    {
+      "value": "GFH",
+      "label": "GOOD FOLK HOSPITALITY GROUP"
+    },
+    {
+      "value": "GG",
+      "label": "GYOZA GYOZA GROUP"
+    },
+    {
+      "value": "GI",
+      "label": "GINGA"
+    },
+    {
+      "value": "GL",
+      "label": "Good Life- Wantirna Party Food"
+    },
+    {
+      "value": "GLI",
+      "label": "GEMELLI"
+    },
+    {
+      "value": "GLO",
+      "label": "GREENLIFEOIL P/L - UCO"
+    },
+    {
+      "value": "GO",
+      "label": "GO GO "
+    },
+    {
+      "value": "GOK",
+      "label": "GOLDEN LOR"
+    },
+    {
+      "value": "GOL",
+      "label": "GOLDLEAF RESTAURANT"
+    },
+    {
+      "value": "GOU",
+      "label": "GOURMET HOSPITALITY"
+    },
+    {
+      "value": "GP",
+      "label": "GEORGES PARAGON"
+    },
+    {
+      "value": "GR",
+      "label": "GRILL'D"
+    },
+    {
+      "value": "GRD",
+      "label": "DARWIN GRILL'D"
+    },
+    {
+      "value": "GT",
+      "label": "GROOVE TRAIN"
+    },
+    {
+      "value": "GTD",
+      "label": "DARWIN GROOVE TRAIN"
+    },
+    {
+      "value": "GU",
+      "label": "GREATER UNION/EVT"
+    },
+    {
+      "value": "GYD",
+      "label": "DARWIN GUZMAN Y GOMEZ"
+    },
+    {
+      "value": "GYG",
+      "label": "GUZMAN Y GOMEZ"
+    },
+    {
+      "value": "HA",
+      "label": "HANS CAFE"
+    },
+    {
+      "value": "HAK",
+      "label": "HAKFOORT GROUP"
+    },
+    {
+      "value": "HAL",
+      "label": "HALLMARK GROUP"
+    },
+    {
+      "value": "HAN",
+      "label": "HARRIS & NARVO GROUP"
+    },
+    {
+      "value": "HAR",
+      "label": "HARAJUKU GYOZA"
+    },
+    {
+      "value": "HAT",
+      "label": "HATORI KARAAGE"
+    },
+    {
+      "value": "HB",
+      "label": "HOGS BREATH "
+    },
+    {
+      "value": "HBD",
+      "label": "DARWIN HOGS BREATH "
+    },
+    {
+      "value": "HC",
+      "label": "HUDSON CATERING"
+    },
+    {
+      "value": "HD",
+      "label": "HUNKY DORY"
+    },
+    {
+      "value": "HE",
+      "label": "HERVEY BAY RSL"
+    },
+    {
+      "value": "HEG",
+      "label": "HELLA GOOD"
+    },
+    {
+      "value": "HEL",
+      "label": "HELLO HARRY"
+    },
+    {
+      "value": "HG",
+      "label": "HURLEY GROUP"
+    },
+    {
+      "value": "HH",
+      "label": "HANOI HANNAH GROUP"
+    },
+    {
+      "value": "HHG",
+      "label": "HUNTER HOTEL GROUP"
+    },
+    {
+      "value": "HHO",
+      "label": "HARVEST HOTELS"
+    },
+    {
+      "value": "HI",
+      "label": "HILTON"
+    },
+    {
+      "value": "HID",
+      "label": "DARWIN HILTON"
+    },
+    {
+      "value": "HIG",
+      "label": "HIGHCLERE HOSPITALITY"
+    },
+    {
+      "value": "HKB",
+      "label": "HANOK KOREAN BBQ"
+    },
+    {
+      "value": "HKC",
+      "label": "HONG KONG CAFE"
+    },
+    {
+      "value": "HL",
+      "label": "HEALTH LINK CAFE"
+    },
+    {
+      "value": "HNT",
+      "label": "HUNT HOSPITALITY GROUP"
+    },
+    {
+      "value": "HO",
+      "label": "HOODBURGERS"
+    },
+    {
+      "value": "HOD",
+      "label": "HODGE GROUP"
+    },
+    {
+      "value": "HOJ",
+      "label": "HOJIAK"
+    },
+    {
+      "value": "HOL",
+      "label": "HOLEY MOLEY AUSTRALIA PTY LTD"
+    },
+    {
+      "value": "HON",
+      "label": "HONKER BURGERS"
+    },
+    {
+      "value": "HOT",
+      "label": "HOT STAR VIC GROUP"
+    },
+    {
+      "value": "HOY",
+      "label": "HOYTS CINEMAS"
+    },
+    {
+      "value": "HS",
+      "label": "HOT STAR (NSW_QLD)"
+    },
+    {
+      "value": "HUN",
+      "label": "HUNTER GROUP"
+    },
+    {
+      "value": "HUX",
+      "label": "HUXTABURGER"
+    },
+    {
+      "value": "HY",
+      "label": "HYATT SERVICES AUSTRALIA"
+    },
+    {
+      "value": "IC",
+      "label": "ICONIC HOSPITALITY"
+    },
+    {
+      "value": "ICH",
+      "label": "ICHIMAKI"
+    },
+    {
+      "value": "IHG",
+      "label": "INTERCONTINENTAL HOTELS GROUP"
+    },
+    {
+      "value": "IK",
+      "label": "IKEA"
+    },
+    {
+      "value": "IL",
+      "label": "I LOVE DUMPLINGS"
+    },
+    {
+      "value": "IM",
+      "label": "IMLACH GROUP"
+    },
+    {
+      "value": "IN",
+      "label": "INFIN8 CARE"
+    },
+    {
+      "value": "IND",
+      "label": "INDUSTRY CAFE"
+    },
+    {
+      "value": "IP",
+      "label": "IPG (BUYFORCE)"
+    },
+    {
+      "value": "IPO",
+      "label": "IPOH Group"
+    },
+    {
+      "value": "IRG",
+      "label": "IRIS HOTEL GROUP"
+    },
+    {
+      "value": "IRO",
+      "label": "IRON CHEF P/L"
+    },
+    {
+      "value": "IRV",
+      "label": "IRVIN HOTEL GROUP"
+    },
+    {
+      "value": "ISS",
+      "label": "INTERGRATED SERVICES"
+    },
+    {
+      "value": "JAY",
+      "label": "JAYRIALA"
+    },
+    {
+      "value": "JBS",
+      "label": "JBS HOSPITALITY"
+    },
+    {
+      "value": "JE",
+      "label": "JERSEY MIKES"
+    },
+    {
+      "value": "JI",
+      "label": "JIMBOS GROUP"
+    },
+    {
+      "value": "JMS",
+      "label": "JMS HOSPITALITY GROUP"
+    },
+    {
+      "value": "JUS",
+      "label": "JUS BURGERS  "
+    },
+    {
+      "value": "KAI",
+      "label": "KAITO GROUP"
+    },
+    {
+      "value": "KAT",
+      "label": "KAT KCOOK"
+    },
+    {
+      "value": "KAZ",
+      "label": "KAZBAH GROUP"
+    },
+    {
+      "value": "KBX",
+      "label": "KBOX"
+    },
+    {
+      "value": "KC",
+      "label": "KINGSLEYS CHICKEN CORP"
+    },
+    {
+      "value": "KCF",
+      "label": "KINGSLEYS CHICKEN FRANCHISE"
+    },
+    {
+      "value": "KEP",
+      "label": "KEPPEL BAY SAILING CLUB"
+    },
+    {
+      "value": "KF",
+      "label": "KINGFISH"
+    },
+    {
+      "value": "KH",
+      "label": "KHANS HOSPITALITY SERVICES- ADAM"
+    },
+    {
+      "value": "KIQ",
+      "label": "KINN THAI QLD"
+    },
+    {
+      "value": "KOG",
+      "label": "KICKON GROUP"
+    },
+    {
+      "value": "KOR",
+      "label": "KOREAN CHICKEN AND"
+    },
+    {
+      "value": "KOT",
+      "label": "KOTO GROUP"
+    },
+    {
+      "value": "KWA",
+      "label": "KWAFOOD GROUP"
+    },
+    {
+      "value": "LA",
+      "label": "LAMONTS"
+    },
+    {
+      "value": "LAK",
+      "label": "LAKSA KING GROUP"
+    },
+    {
+      "value": "LAM",
+      "label": "LAMBYS GROUP"
+    },
+    {
+      "value": "LAN",
+      "label": "LANDMARK CHINESE RESTAURANT"
+    },
+    {
+      "value": "LAU",
+      "label": "LAUNDY GROUP"
+    },
+    {
+      "value": "LAW",
+      "label": "LAWLEYS BAKERY"
+    },
+    {
+      "value": "LC",
+      "label": "LABOR CLUB"
+    },
+    {
+      "value": "LD",
+      "label": "LIL DARLIN"
+    },
+    {
+      "value": "LEF",
+      "label": "LE FEU"
+    },
+    {
+      "value": "LH",
+      "label": "SPIRIT HOTEL QLD VENUE CO"
+    },
+    {
+      "value": "LI",
+      "label": "LIUIZZI PROPERTY GROUP"
+    },
+    {
+      "value": "LIB",
+      "label": "LIBERTY CONVENIENCE"
+    },
+    {
+      "value": "LIL",
+      "label": "LILLYWHITE HOTEL GROUP"
+    },
+    {
+      "value": "LIT",
+      "label": "LITTLE BANGKOK GROUP"
+    },
+    {
+      "value": "LO",
+      "label": "LOCALSCO GROUP"
+    },
+    {
+      "value": "LOC",
+      "label": "THE LOCAL SHACK"
+    },
+    {
+      "value": "LOK",
+      "label": "LOK LOK DUMPLINGS BAR "
+    },
+    {
+      "value": "LOL",
+      "label": "LOLAS GROUP"
+    },
+    {
+      "value": "LP",
+      "label": "LOCAL PUB"
+    },
+    {
+      "value": "LTF",
+      "label": "LORD OF THE FRIES"
+    },
+    {
+      "value": "LU",
+      "label": "LUCAS GROUP"
+    },
+    {
+      "value": "LUC",
+      "label": "LUCKY CHAN GROUP"
+    },
+    {
+      "value": "LY",
+      "label": "LIGHT YEARS GROUP"
+    },
+    {
+      "value": "MA",
+      "label": "MARRIOTT"
+    },
+    {
+      "value": "MAC",
+      "label": "MACELLERIA GROUP"
+    },
+    {
+      "value": "MAD",
+      "label": "MADE ESTABLISHMENT"
+    },
+    {
+      "value": "MAM",
+      "label": "MAMAK"
+    },
+    {
+      "value": "MAN",
+      "label": "MANTRA"
+    },
+    {
+      "value": "MAR",
+      "label": "MARANOS FUEL"
+    },
+    {
+      "value": "MAT",
+      "label": "MATTHEWS HOTEL GROUP"
+    },
+    {
+      "value": "MAZ",
+      "label": "MAZE GROUP"
+    },
+    {
+      "value": "MCC",
+      "label": "TRADER HOUSE (MCCONNELL)"
+    },
+    {
+      "value": "MD",
+      "label": "MING DYNASTY"
+    },
+    {
+      "value": "ME",
+      "label": "MERIVALE GROUP"
+    },
+    {
+      "value": "MG",
+      "label": "MCGUIRES HOTELS"
+    },
+    {
+      "value": "MI",
+      "label": "MIRVAC HOTELS & RESORTS PTY LTD"
+    },
+    {
+      "value": "MIH",
+      "label": "MINH DUC"
+    },
+    {
+      "value": "MIK",
+      "label": "MIKASUKI GROUP"
+    },
+    {
+      "value": "MIN",
+      "label": "MINGARA"
+    },
+    {
+      "value": "MIP",
+      "label": "MISS PICKLE"
+    },
+    {
+      "value": "MIS",
+      "label": "MISS CHOWS"
+    },
+    {
+      "value": "MIT",
+      "label": "MISTA BOO"
+    },
+    {
+      "value": "ML",
+      "label": "MILKY LANE"
+    },
+    {
+      "value": "MLF",
+      "label": "MLF (INDEPENDANTS)"
+    },
+    {
+      "value": "MM",
+      "label": "MINDARIE MARINA"
+    },
+    {
+      "value": "MO",
+      "label": "MICHAEL O'BRIEN CATERING"
+    },
+    {
+      "value": "MOO",
+      "label": "MOONEE VALLEY RACING CLUB"
+    },
+    {
+      "value": "MOT",
+      "label": "MOTTO MOTTO GROUP"
+    },
+    {
+      "value": "MOU",
+      "label": "MOUNTIES GROUP"
+    },
+    {
+      "value": "MOV",
+      "label": "MOVIDA"
+    },
+    {
+      "value": "MPG",
+      "label": "MELB PUB GROUP"
+    },
+    {
+      "value": "MR",
+      "label": "MELBOURNE RACING"
+    },
+    {
+      "value": "MRB",
+      "label": "MR BURGER"
+    },
+    {
+      "value": "MRG",
+      "label": "MINERAL RESOURCES GROUP"
+    },
+    {
+      "value": "MSK",
+      "label": "MISS KAYS"
+    },
+    {
+      "value": "MT",
+      "label": "MANTONG"
+    },
+    {
+      "value": "MU",
+      "label": "MUNDAY GROUP"
+    },
+    {
+      "value": "MVR",
+      "label": "DONT USE MOONEE VALLEY RAC CLUB"
+    },
+    {
+      "value": "MW",
+      "label": "MOVIE WORLD"
+    },
+    {
+      "value": "NA",
+      "label": "NANDOS"
+    },
+    {
+      "value": "NAD",
+      "label": "DARWIN NANDOS"
+    },
+    {
+      "value": "NAH",
+      "label": "NAHM THAI"
+    },
+    {
+      "value": "NAT",
+      "label": "NATIONAL HOSPITALITY MANAGEMENT"
+    },
+    {
+      "value": "NAV",
+      "label": "NAVY CANTEENS"
+    },
+    {
+      "value": "NC",
+      "label": "NORTH COAST COOKING OILS"
+    },
+    {
+      "value": "NCH",
+      "label": "NORTH COAST HOTELS"
+    },
+    {
+      "value": "NEN",
+      "label": "NENE CHICKEN"
+    },
+    {
+      "value": "NL",
+      "label": "NLG OPERATIONS PTY LTD"
+    },
+    {
+      "value": "NOO",
+      "label": "NOODLE BOX"
+    },
+    {
+      "value": "NOR",
+      "label": "NORTHS COLLECTIVE GROUP"
+    },
+    {
+      "value": "OA",
+      "label": "OAKS HOTELS GROUP"
+    },
+    {
+      "value": "OC",
+      "label": "O CHICKEN"
+    },
+    {
+      "value": "OD",
+      "label": "DO NOT USE - OPEN DOOR"
+    },
+    {
+      "value": "OH",
+      "label": "O'HARA HOTELS GROUP"
+    },
+    {
+      "value": "OJ",
+      "label": "OUTBACK JACKS GROUP"
+    },
+    {
+      "value": "OJD",
+      "label": "DARWIN OUTBACK JACKS GROUP"
+    },
+    {
+      "value": "OK",
+      "label": "OKAMI"
+    },
+    {
+      "value": "OP",
+      "label": "OPORTO"
+    },
+    {
+      "value": "OS",
+      "label": "OSCARS HOTEL GROUP"
+    },
+    {
+      "value": "OSH",
+      "label": "OSHIMA"
+    },
+    {
+      "value": "OTD",
+      "label": "DARWIN ON THE RUN"
+    },
+    {
+      "value": "OTH",
+      "label": "CUSTOMERS WITHOUT GROUP"
+    },
+    {
+      "value": "OTR",
+      "label": "ON THE RUN"
+    },
+    {
+      "value": "OW",
+      "label": "OPORTO WHOLESALER"
+    },
+    {
+      "value": "PA",
+      "label": "PORT ADELAIDE FC"
+    },
+    {
+      "value": "PAI",
+      "label": "PAIKS GROUP"
+    },
+    {
+      "value": "PAN",
+      "label": "PAN PACIFIC HOTEL GROUP"
+    },
+    {
+      "value": "PAP",
+      "label": "PAPPARICH GROUP"
+    },
+    {
+      "value": "PAT",
+      "label": "PATEL GROUP"
+    },
+    {
+      "value": "PBH",
+      "label": "PACIFIC BBQ HOUSE"
+    },
+    {
+      "value": "PCO",
+      "label": "PUBLICAN CO"
+    },
+    {
+      "value": "PD",
+      "label": "PUBLIC DINING GROUP"
+    },
+    {
+      "value": "PE",
+      "label": "PANTHERS ENTERTAINMENT GROUP"
+    },
+    {
+      "value": "PET",
+      "label": "PETALING GROUP"
+    },
+    {
+      "value": "PF",
+      "label": "PFD FOODS"
+    },
+    {
+      "value": "PGA",
+      "label": "PUBLICAN GROUP AUST - NOT ACTIVE"
+    },
+    {
+      "value": "PH",
+      "label": "PREMIER HOTELS"
+    },
+    {
+      "value": "PHG",
+      "label": "PALMER HOTEL GROUP"
+    },
+    {
+      "value": "PLA",
+      "label": "PLAZA PREMIUM GROUP"
+    },
+    {
+      "value": "POT",
+      "label": "POTENTIA SOLUTIONS LEISURE"
+    },
+    {
+      "value": "PP",
+      "label": "PERTH PANDA"
+    },
+    {
+      "value": "PR",
+      "label": "PRENDIVILLE GROUP"
+    },
+    {
+      "value": "PRC",
+      "label": "PAKENHAM RACING CLUB"
+    },
+    {
+      "value": "PRI",
+      "label": "PRO INVEST HOTELS"
+    },
+    {
+      "value": "PS",
+      "label": "PATTYSMITHS"
+    },
+    {
+      "value": "PUB",
+      "label": "PUBCO GROUP"
+    },
+    {
+      "value": "PUD",
+      "label": "DARWIN PUMA ENERGY"
+    },
+    {
+      "value": "PUH",
+      "label": "PUBLIC HOSPITALITY"
+    },
+    {
+      "value": "PUM",
+      "label": "CALTEX (CHEVRON)"
+    },
+    {
+      "value": "QCM",
+      "label": "QUEENSLAND CLUB MANAGEMENT"
+    },
+    {
+      "value": "QT",
+      "label": "QT HOTELS"
+    },
+    {
+      "value": "RA",
+      "label": "BP RAMPAGE"
+    },
+    {
+      "value": "RAD",
+      "label": "DARWIN BP RAMPAGE"
+    },
+    {
+      "value": "RAN",
+      "label": "RANDAWAS GROUP"
+    },
+    {
+      "value": "RAS",
+      "label": "RASHAYS"
+    },
+    {
+      "value": "RAW",
+      "label": "RAW GROUP"
+    },
+    {
+      "value": "RB",
+      "label": "REIDEES BRASSERIE"
+    },
+    {
+      "value": "RC",
+      "label": "REDCAPE HOTEL GROUP"
+    },
+    {
+      "value": "RCB",
+      "label": "ROYALS CHICKEN & BURGERS"
+    },
+    {
+      "value": "RCH",
+      "label": "ROCHE GROUP"
+    },
+    {
+      "value": "RD",
+      "label": "RICHARD DENHOLM"
+    },
+    {
+      "value": "RE",
+      "label": "RED ENGINES GROUP"
+    },
+    {
+      "value": "REC",
+      "label": "THE REC GROUP"
+    },
+    {
+      "value": "RED",
+      "label": "RED ROOSTER"
+    },
+    {
+      "value": "RG",
+      "label": "RED ROCKS LEISURE GROUP"
+    },
+    {
+      "value": "RH",
+      "label": "RYANS HOTELS"
+    },
+    {
+      "value": "RIB",
+      "label": "RIBS & RUMPS"
+    },
+    {
+      "value": "RIQ",
+      "label": "RIVERLAND GROUP QLD"
+    },
+    {
+      "value": "RIV",
+      "label": "RIVERLAND GROUP"
+    },
+    {
+      "value": "RO",
+      "label": "ROCKYS CATERING PTY LTD"
+    },
+    {
+      "value": "ROC",
+      "label": "ROCK PAPER SCISSORS"
+    },
+    {
+      "value": "ROG",
+      "label": "ROGERS HOTELS"
+    },
+    {
+      "value": "ROL",
+      "label": "ROLLD"
+    },
+    {
+      "value": "RP",
+      "label": "ROCKPOOL DINING GROUP"
+    },
+    {
+      "value": "RR",
+      "label": "RED ROCKS/GOODIES REBATE"
+    },
+    {
+      "value": "RV",
+      "label": "RACV"
+    },
+    {
+      "value": "RW",
+      "label": "RICE WORKSHOP"
+    },
+    {
+      "value": "RY",
+      "label": "RYDGES"
+    },
+    {
+      "value": "RYD",
+      "label": "DARWIN RYDGES"
+    },
+    {
+      "value": "SA",
+      "label": "SANDALFORD GROUP"
+    },
+    {
+      "value": "SAB",
+      "label": "SALT N BATTERED"
+    },
+    {
+      "value": "SAL",
+      "label": "SALSAS"
+    },
+    {
+      "value": "SAM",
+      "label": "SAMSAM GROUP"
+    },
+    {
+      "value": "SB",
+      "label": "SOUL BURGER"
+    },
+    {
+      "value": "SC",
+      "label": "SOUTHERN CROSS GROUP"
+    },
+    {
+      "value": "SCH",
+      "label": "SCHNITZ"
+    },
+    {
+      "value": "SEW",
+      "label": "SEA WORLD"
+    },
+    {
+      "value": "SG",
+      "label": "SAN CHURRO GROUP"
+    },
+    {
+      "value": "SGR",
+      "label": "SOUVLAKI GR"
+    },
+    {
+      "value": "SH",
+      "label": "SOUVLAKI HUT"
+    },
+    {
+      "value": "SHA",
+      "label": "SHARP GROUP"
+    },
+    {
+      "value": "SHR",
+      "label": "SANDHILL ROAD GROUP"
+    },
+    {
+      "value": "SHU",
+      "label": "SHUJINKO GROUP"
+    },
+    {
+      "value": "SIB",
+      "label": "SIDESHOW BURGERS"
+    },
+    {
+      "value": "SIG",
+      "label": "SIGNATURE CATERING"
+    },
+    {
+      "value": "SIT",
+      "label": "SITE HOSPITALITY"
+    },
+    {
+      "value": "SJ",
+      "label": "SUSHI JIRO GROUP"
+    },
+    {
+      "value": "SKY",
+      "label": "SKYZONE AUSTRALIA PTY LTD"
+    },
+    {
+      "value": "SL",
+      "label": "SLIMS QUALITY BURGERS"
+    },
+    {
+      "value": "SLI",
+      "label": "SLICES"
+    },
+    {
+      "value": "SMO",
+      "label": "SMOKIN JOES PIZZA"
+    },
+    {
+      "value": "SN",
+      "label": "SNAP GROUP"
+    },
+    {
+      "value": "SNB",
+      "label": "SUPER NASH BROTHERS"
+    },
+    {
+      "value": "SNE",
+      "label": "SNEAKERS AND JEANS"
+    },
+    {
+      "value": "SO",
+      "label": "SOVEREIGN GROUP"
+    },
+    {
+      "value": "SOB",
+      "label": "SOL BAR GROUP"
+    },
+    {
+      "value": "SOD",
+      "label": "SODEXO REMOTE SITES"
+    },
+    {
+      "value": "SOL",
+      "label": "SOLOTEL GROUP"
+    },
+    {
+      "value": "SON",
+      "label": "SONO RESTAURANT GROUP"
+    },
+    {
+      "value": "SOU",
+      "label": "SOUTHERN SEOUL"
+    },
+    {
+      "value": "SP",
+      "label": "SPOTLESS"
+    },
+    {
+      "value": "SPG",
+      "label": "SPORTING GLOBE"
+    },
+    {
+      "value": "SQ",
+      "label": "SQUIRES LOFT"
+    },
+    {
+      "value": "SR",
+      "label": "SECRET RECIPE "
+    },
+    {
+      "value": "SS",
+      "label": "SERCO SODEXO"
+    },
+    {
+      "value": "SSA",
+      "label": "SSAM"
+    },
+    {
+      "value": "SSD",
+      "label": "DARWIN SSP AUSTRALIA CATERING"
+    },
+    {
+      "value": "SSP",
+      "label": "SSP AUSTRALIA CATERING GROUP"
+    },
+    {
+      "value": "ST",
+      "label": "STRIKE AUSTRALIA PTY LTD"
+    },
+    {
+      "value": "STA",
+      "label": "STAR HOTELS"
+    },
+    {
+      "value": "STM",
+      "label": "STAMFORD HOTELS"
+    },
+    {
+      "value": "STR",
+      "label": "STRZELECKI GROUP"
+    },
+    {
+      "value": "SU",
+      "label": "SUPREME HOTEL - DONT USE"
+    },
+    {
+      "value": "SUN",
+      "label": "SUNSHINE COAST HOTELS"
+    },
+    {
+      "value": "SUP",
+      "label": "SUPER TETSUDO"
+    },
+    {
+      "value": "SUS",
+      "label": "SUSHI HUB GROUP"
+    },
+    {
+      "value": "SW",
+      "label": "SOUTH WESTERN SYDNEY INST"
+    },
+    {
+      "value": "SWA",
+      "label": "SWAGATH GRAND"
+    },
+    {
+      "value": "SWR",
+      "label": "SEA WORLD RESORT"
+    },
+    {
+      "value": "SYC",
+      "label": "SYDNEY COLLECTIVE"
+    },
+    {
+      "value": "TAI",
+      "label": "TAILORED HOSPITALITY"
+    },
+    {
+      "value": "TAP",
+      "label": "TAPHOUSE P/L (BUYFORCE)"
+    },
+    {
+      "value": "TB",
+      "label": "TACO BILL"
+    },
+    {
+      "value": "TBH",
+      "label": "TB HOTELS"
+    },
+    {
+      "value": "TC",
+      "label": "STAR ENTERTAINMENT"
+    },
+    {
+      "value": "TE",
+      "label": "test group"
+    },
+    {
+      "value": "TEA",
+      "label": "TEA PLUS GROUP"
+    },
+    {
+      "value": "TEK",
+      "label": "TEK GROUP"
+    },
+    {
+      "value": "TEN",
+      "label": "TENFOLD INVESTMENTS GROUP"
+    },
+    {
+      "value": "TEST",
+      "label": "test"
+    },
+    {
+      "value": "TFE",
+      "label": "TOGA FAR EAST HOTELS GROUP"
+    },
+    {
+      "value": "TFW",
+      "label": "TOGA FAR EAST HOTELS WEST COAST"
+    },
+    {
+      "value": "TGI",
+      "label": "TGI FRIDAYS"
+    },
+    {
+      "value": "TGV",
+      "label": "TG-VR AUST JVENT TOPGOLF"
+    },
+    {
+      "value": "TH",
+      "label": "THOMAS HOTELS"
+    },
+    {
+      "value": "THU",
+      "label": "THUGGS"
+    },
+    {
+      "value": "TI",
+      "label": "TILLBROOK GROUP"
+    },
+    {
+      "value": "TMH",
+      "label": "TMH GROUP"
+    },
+    {
+      "value": "TN",
+      "label": "TAFE NSW"
+    },
+    {
+      "value": "TP",
+      "label": "TROPIC PETROLEUM"
+    },
+    {
+      "value": "TRO",
+      "label": "TROPICS HOLDINGS PTY LTD"
+    },
+    {
+      "value": "TSK",
+      "label": "TOKYO SUSHI KITCHEN"
+    },
+    {
+      "value": "TWC",
+      "label": "TRIPPAS WHITE CATERING GROUP"
+    },
+    {
+      "value": "TWH",
+      "label": "TRIPPAS WHITE HOSPITALITY GROUP"
+    },
+    {
+      "value": "TWO",
+      "label": "TWO PECK"
+    },
+    {
+      "value": "UB",
+      "label": "UNIFIED BUYING GROUP"
+    },
+    {
+      "value": "UP",
+      "label": "URBAN PURVEYOR GROUP"
+    },
+    {
+      "value": "UW",
+      "label": "UWSCONNECT"
+    },
+    {
+      "value": "VA",
+      "label": "VARSITY GROUP"
+    },
+    {
+      "value": "VK",
+      "label": "VIKINGS"
+    },
+    {
+      "value": "VP",
+      "label": "VICTORIA PIZZA"
+    },
+    {
+      "value": "VR",
+      "label": "VILLAGE ROADSHOW"
+    },
+    {
+      "value": "VUE",
+      "label": "VUE GROUP"
+    },
+    {
+      "value": "VV",
+      "label": "VARDIS VENUES"
+    },
+    {
+      "value": "WAG",
+      "label": "WAGYA YA"
+    },
+    {
+      "value": "WAH",
+      "label": "WAHLBURGERS"
+    },
+    {
+      "value": "WAL",
+      "label": "WALAWWA THE BUNGALOW"
+    },
+    {
+      "value": "WAR",
+      "label": "WARA SUSHI"
+    },
+    {
+      "value": "WAT",
+      "label": "WATERING HOLE HOTELS"
+    },
+    {
+      "value": "WAY",
+      "label": "WAYMARK HOTELS"
+    },
+    {
+      "value": "WE",
+      "label": "WESTS NEWCASTLE"
+    },
+    {
+      "value": "WES",
+      "label": "WEST LEAGUES"
+    },
+    {
+      "value": "WF",
+      "label": "WORLDWIDE FOOD GROUP"
+    },
+    {
+      "value": "WG",
+      "label": "WAGAMAMA"
+    },
+    {
+      "value": "WH",
+      "label": "WHARF GROUP"
+    },
+    {
+      "value": "WHS",
+      "label": "WHSMITH"
+    },
+    {
+      "value": "WOK",
+      "label": "WOK IN A BOX"
+    },
+    {
+      "value": "WP",
+      "label": "WESSEL PETROLEUM PTY LTD"
+    },
+    {
+      "value": "WR",
+      "label": "WRIGHTS FINE FOOD"
+    },
+    {
+      "value": "WV",
+      "label": "WARNER VILLAGE "
+    },
+    {
+      "value": "WWN",
+      "label": "WET & WILD NSW"
+    },
+    {
+      "value": "WWQ",
+      "label": "WET & WILD QLD"
+    },
+    {
+      "value": "XGO",
+      "label": "XGOLF GROUP"
+    },
+    {
+      "value": "YAN",
+      "label": "YANKEES BURGER BAR"
+    },
+    {
+      "value": "YAS",
+      "label": "YASSAS"
+    },
+    {
+      "value": "YCC",
+      "label": "YUM CHA CUISINE"
+    },
+    {
+      "value": "YG",
+      "label": "YIROS GROUP"
+    },
+    {
+      "value": "YHG",
+      "label": "YOUNG HOTEL GROUP"
+    },
+    {
+      "value": "ZA",
+      "label": "ZAGAMES"
+    },
+    {
+      "value": "ZE",
+      "label": "ZENITH HOTELS GROUP"
+    },
+    {
+      "value": "ZEU",
+      "label": "ZEUS STREET GREEK"
+    },
+    {
+      "value": "ZO",
+      "label": "ZOUKI GROUP"
+    }
+  ],
+  "productType": [
+    {
+      "value": ".",
+      "label": "Product Types"
+    },
+    {
+      "value": "F",
+      "label": "Cooking Oil"
+    },
+    {
+      "value": "P",
+      "label": "Purchase Contract Products"
+    },
+    {
+      "value": "R",
+      "label": "Recycled Oil"
+    },
+    {
+      "value": "X",
+      "label": "SUNDRY EXPENSES"
+    }
+  ],
+  "enquiryMode": [
+    {
+      "value": "STAN",
+      "label": "Standing"
+    },
+    {
+      "value": "ONOF",
+      "label": "One-Off"
+    }
+  ],
+  "permissionLevel": {
+    "myRecordsOnly": false,
+    "reportingRecordsOnly": false,
+    "myDepotOnly": false,
+    "myStateOnly": false,
+    "assignedDepotsOnly": false,
+    "nationalAccess": false,
+    "partialAccess": false,
+    "fullAccess": false,
+    "readOnly": false,
+    "noPermission": true
+  },
+  "upperLevelUsers": {
+    "originator": "hsriniva",
+    "name": "Hari Srinivas",
+    "reportToName": "",
+    "levelUpReportToName": "",
+    "defaultDepotCode": "30",
+    "empId": 3075
+  }
+}

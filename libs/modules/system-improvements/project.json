@@ -1,0 +1,9 @@
+{
+  "name": "system-improvements",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/system-improvements/src",
+  "projectType": "library",
+  "tags": ["system-improvement-module"],
+  "// targets": "to see all targets run: nx show project system-improvements --web",
+  "targets": {}
+}

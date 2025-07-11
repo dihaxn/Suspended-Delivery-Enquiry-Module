@@ -1,0 +1,11 @@
+{
+  "name": "truck-setting",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/truck-setting/src",
+  "projectType": "library",
+  "tags": [
+    "truck-setting-module"
+  ],
+  "// targets": "to see all targets run: nx show project truck-setting --web",
+  "targets": {}
+}

@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": false,
+  "cSpell.words": [
+    "catlog",
+    "Compl",
+    "cust",
+    "Datawith",
+    "desp",
+    "formatto",
+    "hsriniva",
+    "ivce",
+    "kbowles",
+    "sorder"
+	],
+  "nxConsole.generateAiAgentRules": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

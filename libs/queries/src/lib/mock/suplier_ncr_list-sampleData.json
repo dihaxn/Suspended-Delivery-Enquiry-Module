@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "supplierNcrId": 1,
+            "depotCode": "40",
+            "depotName": "Yatala",
+            "supplierCode": "PEEBRAV0",
+            "supplierName": "PEERLESS HOLDINGS PTY LTD",
+            "logDate": "10-Mar-2025 16:14:58",
+            "createdDate": "10-Mar-2025 16:14:58",
+            "closeOutCommOn": "10-Mar-2025 16:14:58",
+            "closeOutBy": "test user",
+            "overallCount": 2,
+            "refCode": "2/2023",
+            "classification": "ABC",
+            "classificationName": "Paper Work",
+            "lastModifiedBy": "test user 2",
+            "lastModifiedDate": "10-Mar-2025 16:14:58"
+        },
+ 	{
+            "supplierNcrId": 2,
+            "depotCode": "20",
+            "depotName": "NSW",
+            "supplierCode": "Test",
+            "supplierName": "Test HOLDINGS PTY LTD",
+            "logDate": "10-Mar-2025 16:14:58",
+            "createdDate": "10-Mar-2025 16:14:58",
+            "closeOutCommOn": "10-Mar-2025 16:14:58",
+            "closeOutBy": "test user",
+            "overallCount": 2,
+            "refCode": "3/2023",
+            "classification": "ABC",
+            "classificationName": "Paper Work",
+            "lastModifiedBy": "test user 3",
+            "lastModifiedDate": "10-Mar-2025 16:14:58"
+        }
+
+    ],
+    "totalRowCount": 0
+}

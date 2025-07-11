@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "supplierNcrId": 0,
+            "depotCode": "string",
+            "depotName": "string",
+            "supplierCode": "string",
+            "supplierName": "string",
+            "logDate": "string",
+            "createdDate": "string",
+            "closeOutCommOn": "string",
+            "closeOutBy": "string",
+            "overallCount": 0,
+            "refCode": "string",
+            "classification": "string",
+            "classificationName": "string",
+            "lastModifiedBy": "string",
+            "lastModifiedDate": "string"
+        }
+    ],
+    "totalRowCount": 0
+}

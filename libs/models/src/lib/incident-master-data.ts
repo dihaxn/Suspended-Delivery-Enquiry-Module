@@ -1,0 +1,46 @@
+import { CarrierList } from './carrier-data';
+import { GridColumn } from './grid-column';
+import { EmployeeDropdownDtoList } from './incident-management/incident-employee-dto';
+import { IncidentEmployeeModel } from './incident-management/incident-employee-master';
+import { LookupTable, UpperLevelUsers } from './shared';
+export interface IncidentMasterData {
+  depotList: LookupTable[];
+ // durationList: LookupTable[];
+  statusList: LookupTable[];
+  reportTypeList: LookupTable[];
+  workSiteList: LookupTable[];
+  genderList: LookupTable[];
+  jobTypeList: LookupTable[];
+  //optionList: LookupTable[];
+  injuredPersonList: LookupTable[];
+  firstAidList: LookupTable[];
+  feasibleActionList: LookupTable[];
+  claimStatusList: LookupTable[];
+  insurerList: LookupTable[];
+  documentTypeList: LookupTable[];
+  analysisCalenderYearList: LookupTable[];
+  analysisPeriodList: LookupTable[];
+  analysisYTDPeriodList: LookupTable[];
+  analysisReportFilterList: LookupTable[];
+  incidentGridColumnList: GridColumn[];
+  editOnlyFirstTwoSection: boolean;
+  showWorkCover: boolean;
+  editWorkCover: boolean;
+  editFourthSection: boolean;
+  showAnalysisReport: boolean;
+  permissionLevel: {
+    myRecordsOnly: boolean;
+    myDepotOnly: boolean;
+    myStateOnly: boolean;
+    assignedDepotsOnly: boolean;
+    nationalAccess: boolean;
+    partialAccess: boolean;
+    fullAccess: boolean;
+    readOnly: boolean;
+  };
+  upperLevelUsers: UpperLevelUsers;
+  userDropdownList: IncidentEmployeeModel[];
+  userByDepotHierarchyDropdownList: IncidentEmployeeModel[];
+  employeeDropdownDtoList: EmployeeDropdownDtoList[];
+  carrierList: CarrierList[];
+}

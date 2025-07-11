@@ -1,0 +1,30 @@
+.features-base {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  overflow: auto;
+}
+
+.features-base > aside {
+  max-width: 300px;
+  min-width: 200px;
+  overflow-y: auto;
+  background-color: #f2f6fa;
+  border-right: 1px solid #edeff9;
+  grid-column: 1;
+  padding: 16px;
+}
+
+.features-base > main {
+  overflow-y: auto;
+  grid-column: 2;
+  display: grid;
+}
+
+.features-base > article {
+  overflow-y: auto;
+  grid-column: 3;
+  border-left: 1px solid #edeff9;
+  background-color: #fafdfe;
+  min-width: 400px;
+}

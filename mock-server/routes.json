@@ -1,0 +1,15 @@
+{
+  "/api/cms/navigation": "/navigation",
+  "/api/cms/todos": "/todos",
+  "/api/backer/todos": "/todos",
+  "/api/cms/incidents": "/incidents",
+  "/api/cms/GetEmployeeReportGrid": "/GetEmployeeReportGrid",
+  "/api/cms/incidentdetails": "/incidentdetails",
+  "/api/cms/saveincidents": "/saveincidents",
+  "/api/cms/incident-master": "/incident-master",
+  "/api/cms/incidentsNew": "/incidentList",
+  "/api/Rules": "/rules",
+  "/api/GetPeople": "/GetPeople",
+  "/api/SystemData": "/SystemData",
+  "/api/cms/incident-docs-content": "/incident-docs-content"
+}

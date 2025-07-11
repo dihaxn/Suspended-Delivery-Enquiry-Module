@@ -1,0 +1,9 @@
+{
+  "name": "incident-management",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/incident-management/src",
+  "projectType": "library",
+  "tags": ["incident-management-module"],
+  "// targets": "to see all targets run: nx show project incident-management --web",
+  "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "cookers-mobile",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/cookers-mobile/src",
+  "projectType": "application",
+  "tags": ["apps-cookers-mobile"],
+  "// targets": "to see all targets run: nx show project cookers-mobile --web",
+  "targets": {}
+}

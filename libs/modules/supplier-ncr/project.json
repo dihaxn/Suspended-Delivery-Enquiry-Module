@@ -1,0 +1,9 @@
+{
+  "name": "supplier-ncr",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/supplier-ncr/src",
+  "projectType": "library",
+  "tags": ["supplier-ncr-module"],
+  "// targets": "to see all targets run: nx show project supplier-ncr --web",
+  "targets": {}
+}

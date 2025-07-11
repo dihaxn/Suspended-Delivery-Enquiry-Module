@@ -1,0 +1,28 @@
+.section-main-base {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: auto;
+}
+
+.section-main-base > header {
+  overflow-y: auto;
+  grid-row: 1;
+  box-shadow: 1px -1px 5px 0px #00000042;
+  z-index: 1;
+}
+
+.section-main-base > header > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000000a;
+}
+
+.section-main-base > main {
+  overflow-y: auto;
+  grid-row: 2;
+}
+
+.section-main-base > footer {
+  overflow-y: auto;
+  grid-row: 3;
+}

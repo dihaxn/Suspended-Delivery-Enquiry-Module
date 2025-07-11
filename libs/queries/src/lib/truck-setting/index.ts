@@ -1,0 +1,1 @@
+export * from './use-truck-master-data-query';

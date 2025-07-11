@@ -1,0 +1,274 @@
+{
+    "statusList": [
+        {
+            "value": "O",
+            "label": "Open"
+        },
+        {
+            "value": "C",
+            "label": "Closed"
+        },
+        {
+            "value": "E",
+            "label": "Waiting for Employee Acceptance"
+        },
+        {
+            "value": "M",
+            "label": "Waiting for Manager Acceptance"
+        }
+    ],
+    "depotList": [
+        {
+            "value": "20",
+            "label": "Huntingwood"
+        },
+        {
+            "value": "30",
+            "label": "Huntingwood1"
+        }
+    ],
+    "durationList": [
+        {
+            "value": "today",
+            "label": "Today"
+        },
+        {
+            "value": "week",
+            "label": "Week"
+        },
+        {
+            "value": "month",
+            "label": "Month"
+        },
+        {
+            "value": "3month",
+            "label": "3 Month"
+        },
+        {
+            "value": "6month",
+            "label": "6 Month"
+        },
+        {
+            "value": "9month",
+            "label": "9 Month"
+        },
+        {
+            "value": "year",
+            "label": "Year"
+        }
+    ],
+    "optionList": [
+        {
+            "value": "N",
+            "label": "No"
+        },
+        {
+            "value": "Y",
+            "label": "Yes"
+        }
+    ],
+    "permissionLevel": {
+        "myRecordsOnly": true,
+        "reportingRecordsOnly": true,
+        "myDepotOnly": true,
+        "myStateOnly": true,
+        "assignedDepotsOnly": true,
+        "nationalAccess": true,
+        "partialAccess": true,
+        "fullAccess": true,
+        "readOnly": true,
+        "noPermission": true
+    },
+    "upperLevelUsers": {
+        "originator": "mbrzoska",
+        "name": "Martin Brzoska",
+        "reportToName": "Benjamin Longden",
+        "levelUpReportToName": "Robbie Coccaro",
+        "defaultDepotCode": "20",
+        "empId": 208
+    },
+    "classificationList": [
+        {
+            "value": "ABC",
+            "label": "Paper Work"
+        },
+        {
+            "value": "PRO",
+            "label": "Product Related"
+        }
+    ],
+    "personRaisedList": [
+        {
+            "originator": "558",
+            "name": "Aaron Logan",
+            "userGroupId": 10,
+            "groupLevel": 0
+        },
+        {
+            "originator": "566",
+            "name": "Adam Hammel",
+            "userGroupId": 12,
+            "groupLevel": 0
+        }
+    ],
+    "catalogList": [
+        {
+            "catlogCode": "Canola",
+            "description": "Canola"
+        },
+        {
+            "catlogCode": "XLFRYP",
+            "description": "XLFRY Oil - Packaged"
+        }
+    ],
+    "suppliersList": [
+        {
+            "supplierCode": "12345",
+            "name": "supplier 1",
+            "state": "NSW",
+            "telephone1": "066666666",
+            "contact": "Person1"
+        }
+    ],
+    "showAnalysisReport": false,
+    "allowFirstTwoSectionOnly": false,
+    "editOnlyFirstTwoSection": false,
+    "editCloseSection": true,
+    "analysisReportFilterList": [
+        {
+            "value": "YD3F",
+            "label": "YTD (3 Financial yrs)"
+        },
+        {
+            "value": "CALY",
+            "label": "Calendar Year"
+        },
+        {
+            "value": "FINY",
+            "label": "Financial Year"
+        },
+        {
+            "value": "LSTM",
+            "label": "Last Month"
+        },
+        {
+            "value": "CUST",
+            "label": "Custom Date Range"
+        },
+        {
+            "value": "YD5C",
+            "label": "YTD (5 Calendar yrs)"
+        }
+    ],
+    "analysisCalenderYearList": [
+        {
+            "value": "2015",
+            "label": "2015"
+        },
+        {
+            "value": "2016",
+            "label": "2016"
+        },
+        {
+            "value": "2017",
+            "label": "2017"
+        },
+        {
+            "value": "2018",
+            "label": "2018"
+        },
+        {
+            "value": "2019",
+            "label": "2019"
+        },
+        {
+            "value": "2020",
+            "label": "2020"
+        },
+        {
+            "value": "2021",
+            "label": "2021"
+        },
+        {
+            "value": "2022",
+            "label": "2022"
+        },
+        {
+            "value": "2023",
+            "label": "2023"
+        },
+        {
+            "value": "2024",
+            "label": "2024"
+        },
+        {
+            "value": "2025",
+            "label": "2025"
+        }
+    ],
+    "analysisPeriodList": [
+        {
+            "value": "2015/2016",
+            "label": "2015/2016"
+        },
+        {
+            "value": "2016/2017",
+            "label": "2016/2017"
+        },
+        {
+            "value": "2017/2018",
+            "label": "2017/2018"
+        },
+        {
+            "value": "2018/2019",
+            "label": "2018/2019"
+        },
+        {
+            "value": "2019/2020",
+            "label": "2019/2020"
+        },
+        {
+            "value": "2020/2021",
+            "label": "2020/2021"
+        },
+        {
+            "value": "2021/2022",
+            "label": "2021/2022"
+        },
+        {
+            "value": "2022/2023",
+            "label": "2022/2023"
+        },
+        {
+            "value": "2023/2024",
+            "label": "2023/2024"
+        },
+        {
+            "value": "2024/2025",
+            "label": "2024/2025"
+        }
+    ],
+    "analysisYTDPeriodList": [
+        {
+            "value": "2023 to 2025",
+            "label": "2023 to 2025"
+        }
+    ],
+    "employeeDropdownDtoList": [
+        {
+            "empId": 254,
+            "originator": "102",
+            "name": "David Rosso"
+        },
+        {
+            "empId": 1010,
+            "originator": "111",
+            "name": "Oshini Perera - Driver"
+        },
+        {
+            "empId": 261,
+            "originator": "147",
+            "name": "Paul Holbrook"
+        }
+    ]
+}

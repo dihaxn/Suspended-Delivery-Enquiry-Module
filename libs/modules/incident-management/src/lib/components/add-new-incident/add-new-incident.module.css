@@ -1,0 +1,26 @@
+
+  .gridrow{
+    margin-bottom: 20px;
+  }
+  .boxcontainer{
+    width: 400px;
+    height: 50px;
+  }
+  .formrow {
+    display: flex;
+    gap: 16px; /* Adjust the gap as needed */
+  }
+  
+  .formitem {
+    flex: 1; /* Make each item take up equal space */
+  }
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Disable interaction */
+  }
+  
+  .visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }

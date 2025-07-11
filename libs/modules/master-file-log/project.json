@@ -1,0 +1,9 @@
+{
+  "name": "master-file-log",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/master-file-log/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project master-file-log --web",
+  "targets": {}
+}

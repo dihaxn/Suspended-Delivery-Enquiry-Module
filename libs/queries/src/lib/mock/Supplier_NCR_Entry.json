@@ -1,0 +1,84 @@
+{
+    "supplierNcrId": 0,
+    "raisedBy": "string",
+    "logDate": "string",
+    "receivedDate":"string",
+    "depotCode": "string",
+    "supplierCode": "string",
+    "catalogCode": "string",
+    "batchNo": "string",
+    "invoiceNo": "string",
+    "classification": "string",
+    "dateOfMan": "string",
+    "reason": "string",
+    "immActionDesc": "string",
+    "suppRespBy": "string",
+    "suppRespTitle": "string",
+    "rootCause":"string",
+    "corrActionDesc":"string",
+    "preventiveAction":"string",
+    "suppRespOn": "string",
+    "anyFurtherAction": "string",
+    "closeOutCommOn": "string",
+    "closeOutComm": "string",
+    "closeOutBy": "string",
+    "closeOutTitle": "string",
+    "closeOutOn": "string",
+    "createdBy": "string",
+    "createdDate": "string",
+    "lastModifiedBy": "string",
+    "lastModifiedDate": "string",
+    "refCode": "string",
+    "status":"string",
+    "supplierNcrResponses": [
+        {
+            "step": 1,
+            "originator": "COOKERS",
+            "reponseId": 0,
+            "supplierNcrId": 0,
+            "responseDesc": "string",
+
+            "createdBy": "string",
+            "createdDate": "string",
+            "lastModifiedBy": "string",
+            "lastModifiedDate": "string"
+        },
+        
+        {
+            "step": 2,
+            "originator": "SUPPLIER",
+            "reponseId": 0,
+            "supplierNcrId": 0,
+            "responseDesc": "string",
+            "createdBy": "string",
+            "createdDate": "string",
+            "lastModifiedBy": "string",
+            "lastModifiedDate": "string"
+        },
+        {
+            "step": 3,
+            "originator": "COOKERS",
+            "reponseId": 0,
+            "supplierNcrId": 0,
+            "responseDesc": "string",
+            "createdBy": "string",
+            "createdDate": "string",
+            "lastModifiedBy": "string",
+            "lastModifiedDate": "string"
+        }
+    ],
+  "supplierNcrResource": [
+        {
+            "step": 3,
+            "documentId": 0,
+            "supplierNcrId": 0,
+            "documentName": "string",
+            "documentContent": "string",
+            "path": "string",
+            "createdBy": "string",
+            "createdDate": "string",
+            "lastModifiedBy": "string",
+            "lastModifiedDate": "string"
+        }
+    ]
+}

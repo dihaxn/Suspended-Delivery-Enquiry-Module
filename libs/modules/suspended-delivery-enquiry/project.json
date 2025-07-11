@@ -1,0 +1,9 @@
+{
+  "name": "modules-suspended-delivery-enquiry",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/suspended-delivery-enquiry/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project modules-suspended-delivery-enquiry --web",
+  "targets": {}
+}

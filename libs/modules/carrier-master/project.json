@@ -1,0 +1,9 @@
+{
+  "name": "carrier-master",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/modules/carrier-master/src",
+  "projectType": "library",
+  "tags": ["carrier-master-module"],
+  "// targets": "to see all targets run: nx show project carrier-master --web",
+  "targets": {}
+}

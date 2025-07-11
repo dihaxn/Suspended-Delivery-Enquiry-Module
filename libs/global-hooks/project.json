@@ -1,0 +1,9 @@
+{
+  "name": "global-hooks",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/global-hooks/src",
+  "projectType": "library",
+  "tags": ["global-hooks"],
+  "// targets": "to see all targets run: nx show project global-hooks --web",
+  "targets": {}
+}

@@ -1,0 +1,60 @@
+{
+  "supplierNcrId": 1,
+ "raisedBy": "gnash",
+  "logDate": "10-Mar-2025 16:14:58",
+  "receivedDate":"10-Mar-2025 16:14:58",
+  "depotCode": "40",
+  "supplierCode": "PEEBRAV0",
+  "catalogCode": "CAT123",
+  "batchNo": "1234",
+"invoiceNo": "INV1234",
+  "classification": "ABC",
+  "dateOfMan": "10-Mar-2025 16:14:58",
+  "reason": "test1234 reason",
+  "immActionDesc": "Testing plz ignore",
+  "suppRespBy": "Supplier 1",
+  "suppRespTitle": "QA Manager",
+  
+"rootCause":"Testing",
+"corrActionDesc":"Testing",
+"preventiveAction":"Testing",
+
+  "suppRespOn": "10-Mar-2025 16:14:58",
+  "anyFurtherAction": "Y",
+  "closeOutCommOn": "10-Mar-2025 16:14:58",
+  "closeOutComm": "Testing comment",
+  "closeOutBy": "bbreen",
+  "closeOutTitle": "State Manager",
+  "closeOutOn": "10-Mar-2025 16:14:58",
+  "createdBy": "kbowles",
+  "createdDate":"10-Mar-2025 16:14:58",
+  "lastModifiedBy": "bbreen",
+  "lastModifiedDate": "10-Mar-2025 16:14:58",
+  "refCode": "2/2023",
+"status":"O",
+ "supplierNcrResponses": [
+    {
+      "reponseId": 1,
+      "supplierNcrId": 1,
+      "suppRespDesc": "Response Received",
+      "createdBy": "kbowles",
+      "createdDate": "10-Mar-2025 16:14:58",
+      "lastModifiedBy": "string",
+      "lastModifiedDate": "10-Mar-2025 16:14:58"
+    }
+  ]
+
+  "supplierNcrResource": [
+    {
+      "documentId": 1,
+      "supplierNcrId": 1,
+      "documentName": "File1.jpg",
+      "documentContent": "wwwwwwwwwwww",
+      "path": "path123",
+      "createdBy": "kbowles",
+      "createdDate": "10-Mar-2025 16:14:58",
+      "lastModifiedBy": "kbowles",
+      "lastModifiedDate": "10-Mar-2025 16:14:58"
+    }
+  ]
+}

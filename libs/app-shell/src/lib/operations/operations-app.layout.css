@@ -1,0 +1,24 @@
+.operations-app-layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 60px 1fr;
+}
+
+.operations-app-layout > .main-navigation {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background-color: #254285;
+}
+
+.operations-app-layout > .operations-app-header {
+  grid-column: 2;
+  background-color: #f2f6fa;
+}
+
+.operations-app-layout > .content-block {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  overflow: auto;
+}
