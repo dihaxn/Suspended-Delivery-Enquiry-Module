@@ -10,6 +10,7 @@ import invoiceReducer from './slices/invoice.slice';
 import carrierMasterReducer from './slices/carrier-master-slice';
 import { salesOrderReducer } from './slices/sales-order.slice';
 import { masterFileLogReducer } from './slices/master-file-log.slice';
+import suspendedDeliveryReducer from './slices/suspended-delivery-slice';
 export const store = configureStore({
   reducer: {
     incidentManagement: incidentManagementReducer,
@@ -22,7 +23,8 @@ export const store = configureStore({
     globalMaster: globalMasterReducer,
     carrierMaster: carrierMasterReducer,
     salesOrder: salesOrderReducer,
-    masterFileLog: masterFileLogReducer
+    masterFileLog: masterFileLogReducer,
+    suspendedDelivery: suspendedDeliveryReducer
   },
 });
 export type RootState = ReturnType<typeof store.getState>;
