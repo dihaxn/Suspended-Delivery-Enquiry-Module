@@ -14,6 +14,7 @@ import { NavigationBlockProvider } from '@cookers/modules/common';
 import { CarrierMasterShell } from '@cookers/modules/carrier-master';
 import { SalesOrderShell } from '@cookers/modules/sales-order';
 import { InvoicesShell } from '@cookers/modules/invoices';
+import { SuspendedDelivery } from '@cookers/modules/suspended-delivery-enquiry';
 export function OperationsAppShell() {
   return (
     <Theme>
@@ -43,6 +44,7 @@ export function OperationsAppShell() {
                         <Route path="carrier-master/*" element={<CarrierMasterShell />} />
                         <Route path="sales-order/*" element={<SalesOrderShell />} />
                         <Route path="invoices/*" element={<InvoicesShell />} />
+                        <Route path="suspended-delivery/*" element={<SuspendedDelivery />} />
                       </Route>
                     </Route>
                     <Route path="*" element={<NotFound />} />
