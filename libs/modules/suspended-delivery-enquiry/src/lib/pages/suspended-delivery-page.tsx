@@ -2,8 +2,8 @@ import { Button, Flex, Grid, Heading, ModuleBaseLayout, PopOverControl, SectionB
 import { configStore, STORE, useStoreSelector } from '@cookers/store';
 import { FileIcon, PinBottomIcon } from '@radix-ui/react-icons';
 import { useNavigate } from 'react-router-dom';
-import { SuspendedDeliveryFilters} from '../components';
-//import SuspendedDeliveryQuickView from '../components';
+import { SuspendedDeliveryFilters, SuspendedDeliveryList} from '../components';
+import { SuspendedDeliveryQuickView } from '../components';
 import { useState } from 'react';
 import { IconButton } from '@radix-ui/themes';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'libs/ui/src/lib/shadcn/tooltip';
@@ -71,7 +71,7 @@ export function SuspendedDeliveryPage () {
     </Flex>
   );
 
-  const main = <SectionBaseLayout header={header} main={<SuspendedDeliveryFilters />}></SectionBaseLayout>;
+  const main = <SectionBaseLayout header={header} main={<SuspendedDeliveryList />}></SectionBaseLayout>;
 
-  return <ModuleBaseLayout aside={<SuspendedDeliveryFilters />} main={main} article={<SuspendedDeliveryFilters  />} />;
+  return <ModuleBaseLayout aside={<SuspendedDeliveryFilters />} main={main} article={<SuspendedDeliveryQuickView  />} />;
 }

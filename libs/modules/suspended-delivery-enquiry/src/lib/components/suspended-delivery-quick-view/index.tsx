@@ -1,1 +1,1 @@
-//export * from './suspended-delivery-quick-view';
+export * from './suspended-delivery-quick-view';
