@@ -13,6 +13,7 @@ export enum STORE {
   SalesOrder = 'salesOrder',
   Invoice = 'invoice',
   MasterFileLog = 'masterFileLog',
+  SuspendedDelivery = 'suspendedDelivery',
   // Add other keys here as needed
 }
 
@@ -28,6 +29,7 @@ const stateSelectors = {
   [STORE.SalesOrder]: (state: RootState) => state.salesOrder,
   [STORE.Invoice]: (state: RootState) => state.invoice,
   [STORE.MasterFileLog]: (state: RootState) => state.masterFileLog,
+  [STORE.SuspendedDelivery]: (state: RootState) => state.suspendedDelivery,
 
   
   // Add other selectors here as needed

@@ -24,3 +24,4 @@ export * from './lib/carrier';
 export * from './lib/sales-order';
 export * from './lib/invoice';
 export * from './lib/master-file-log';
+export * from './lib/suspended-delivery';

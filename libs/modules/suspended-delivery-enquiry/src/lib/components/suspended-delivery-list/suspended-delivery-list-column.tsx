@@ -1,76 +1,74 @@
 import { DropDownMenuItem, SupplierNCRList } from '@cookers/models';
 import { configStore } from '@cookers/store';
 import { DropdownMenuList } from '@cookers/ui';
-import { Badge } from '@radix-ui/themes';
 import { ColumnDef } from '@tanstack/react-table';
 import { useNavigate } from 'react-router-dom';
-//import { colorSelectorByStatusName } from '../../util/supplierNcrUtils';
 
 export const SuspendedDeliveryColumns: ColumnDef<SupplierNCRList>[] = [
  
   {
-    accessorKey: 'supplierName',
+    accessorKey: 'customerCode',
     header: 'Customer Code',
     size: 150,
     meta: { filterable: true, filterType: 'number' },
 
   },
   {
-    accessorKey: 'classificationName',
+    accessorKey: 'customerName',
     header: 'Customer Name',
     size: 300,
     meta: { filterable: true, filterType: 'name' },
 
   },
   {
-    accessorKey: 'createdDate',
+    accessorKey: 'custGroup',
     header: 'Cust Group',
     size: 150,
   },
   {
-    accessorKey: 'receivedDate',
+    accessorKey: 'ETAFresh',
     header: 'ETA for return - Fresh',
     size: 150,
   },
   {
-    accessorKey: 'depotName',
+    accessorKey: 'ETAUCO',
     header: 'ETA for return - UCO',
     size: 150,
   },
   {
-    accessorKey: 'suppRespBy',
+    accessorKey: 'BDMCode',
     header: 'BDM Code',
     size: 150,
     meta: { filterable: true, filterType: 'number' },
 
   },
   {
-    accessorKey: 'productName',
+    accessorKey: 'carrierCode',
     header: 'Carrier Code',
     size: 150,
     meta: { filterable: true, filterType: 'number' },
 
   },
   {
-    accessorKey: 'closeOutOn',
+    accessorKey: 'contact',
     header: 'Contact',
     size: 150,
   },
 {
-    accessorKey: 'closeOutOn',
+    accessorKey: 'phone',
     header: 'Phone',
     size: 150,
   },{
-    accessorKey: 'closeOutOn',
+    accessorKey: 'mobile',
     header: 'Mobile',
     size: 150,
   },
   {
-    accessorKey: 'closeOutOn',
+    accessorKey: 'email',
     header: 'Email Address',
     size: 150,
   },{
-    accessorKey: 'closeOutOn',
+    accessorKey: 'suspensionComments',
     header: 'Suspension Comments',
     size: 300,
   },

@@ -1,7 +1,14 @@
+import  {SuspendedDeliveryList}  from '@cookers/models';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-// Define interfaces based on the requirements document
+import { clearAllStates } from '../helper/clear-all-states-action';
+
+
+export interface SuspendedDeliveryState{
+  quickview: SuspendedDeliveryList;
+}
+
 export interface SuspendedDeliveryRecord {
   custCode: string;
   name: string;
@@ -284,3 +291,4 @@ export const selectSuspendedDeliveryError = (state: any) => state.suspendedDeliv
 export const selectSuspendedDeliveryExportInProgress = (state: any) => state.suspendedDelivery.exportInProgress;
 export const selectSuspendedDeliverySearchInProgress = (state: any) => state.suspendedDelivery.searchInProgress;
 export const selectSuspendedDeliveryTotalRecords = (state: any) => state.suspendedDelivery.totalRecords;
+

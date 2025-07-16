@@ -1,23 +1,4 @@
-export const colorSelectorByStatusName = (statusName: string) => {
-  switch (statusName.toLowerCase()) {
-    case 'active':
-      return 'green';
-    case 'suspended':
-      return 'red';
-    case 'pending':
-      return 'yellow';
-    case 'confirmed':
-      return 'blue';
-    case 'medium':
-      return 'yellow';
-    case 'high':
-      return 'red';
-    case 'low':
-      return 'green';
-    default:
-      return 'gray';
-  }
-};
+
 
 export const custGroupSampleData = [
   { label: 'All', value: 'All' },

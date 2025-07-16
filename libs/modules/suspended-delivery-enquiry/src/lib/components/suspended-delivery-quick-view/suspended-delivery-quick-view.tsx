@@ -1,15 +1,15 @@
 import { useMemo } from 'react';
 import { STORE, useStoreSelector } from '@cookers/store';
-import { Badge, Button, Flex, Heading, ScrollArea, Separator, Text } from '@radix-ui/themes';
+import { Badge ,Flex, Heading, ScrollArea, Text } from '@radix-ui/themes';
 
 export const SuspendedDeliveryQuickView = () => {
-   const { selectedCarrier } = useStoreSelector(STORE.CarrierMaster);
-  
-  console.log(selectedCarrier);
-  const isVisible = useMemo(() => {
-    return !selectedCarrier || Object.keys(selectedCarrier).length === 0 || selectedCarrier.carrierCode === '';
-  }, [selectedCarrier]);
+  // Use quickview from SuspendedDelivery slice
+  const { quickview } = useStoreSelector(STORE.SuspendedDelivery);
 
+  console.log(quickview);
+  const isVisible = useMemo(() => {
+    return !quickview || Object.keys(quickview).length === 0 || quickview.customerCode === '';
+  }, [quickview]);
 
   const renderField = (label:string, value:string |number| undefined) => {
     return (<Text size="1">
@@ -20,7 +20,7 @@ export const SuspendedDeliveryQuickView = () => {
     </Text>)
   }
 
- return isVisible ? (
+  return isVisible ? (
     <Flex gap="3" direction="column" width="100%" maxWidth="400px" height="100%">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
         <Flex direction="column" p="4" align="center">
@@ -40,21 +40,21 @@ export const SuspendedDeliveryQuickView = () => {
         <Flex gap="3" direction="column" p="4">
           <Heading size="4">Suspended Delivery Quick View</Heading>
           <Heading size="2">
-            Carrier Code <Badge variant="soft">{selectedCarrier.carrierCode}</Badge>
+            Customer Code <Badge variant="soft">{quickview.customerCode}</Badge>
           </Heading>
           <Flex direction="column">
-            {renderField('Name', selectedCarrier.name)}
-          {renderField('Depot', selectedCarrier.depotName)}
-          {renderField('Truck Type', selectedCarrier.truckTypeName)}
-          {renderField('Rego No', selectedCarrier.regoNo)}
-          {renderField('Driver Name', selectedCarrier.driverName)}
-          {renderField('Employee No', selectedCarrier.employeeNo)}
-          {renderField('Contact', selectedCarrier.contact)}
-          {renderField('Auto Runsheet Sequence', (selectedCarrier.autoSequenceFlag===1?'Yes':'No'))}
-          {renderField('Remarks', selectedCarrier.remarks)}
-           
-    </Flex>
-         
+            {renderField('Customer Name', quickview.customerName)}
+            {renderField('Cust Group', quickview.custGroup)}
+            {renderField('ETA for return - Fresh', quickview.ETAfresh?.toString())}
+            {renderField('ETA for return - UCO', quickview.ETAUCO?.toString())}
+            {renderField('BDM Code', quickview.BDMCode)}
+            {renderField('Carrier Code', quickview.carrierCode)}
+            {renderField('Contact', quickview.contact)}
+            {renderField('Phone', quickview.phone)}
+            {renderField('Mobile', quickview.mobile)}
+            {renderField('Email Address', quickview.email)}
+            {renderField('Suspension Comment', quickview.suspensionComments)}
+          </Flex>
         </Flex>
       </ScrollArea>
     </Flex>

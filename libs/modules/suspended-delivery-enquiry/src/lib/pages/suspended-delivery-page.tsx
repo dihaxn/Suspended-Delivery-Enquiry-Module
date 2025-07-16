@@ -35,18 +35,7 @@ export function SuspendedDeliveryPage () {
       openWindow(objURL);
     }
   };
-  const showAnalysisReportPopup = async (data: SupplierNcrAnalysisFormData) => {
-    console.log(data);
-    const supplierNCRListDocData = await downloadSupplierNcrAnalysisReport(data);
-
-    if (supplierNCRListDocData) {
-      const base64DocumentFile = supplierNCRListDocData.documentFile;
-      const mimeType = supplierNCRListDocData.detailedExtension;
-      const blob = convertBase64ToBlob(base64DocumentFile, mimeType);
-      const objURL = URL.createObjectURL(blob);
-      openWindow(objURL);
-    }
-  };
+  
 
   */
   const openWindow = (URL: string) => {

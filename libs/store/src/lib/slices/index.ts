@@ -9,3 +9,4 @@ export * from './carrier-master-slice';
 export * from './sales-order.slice';
 export * from './invoice.slice';
 export * from './master-file-log.slice';
+export * from './suspended-delivery-slice';
