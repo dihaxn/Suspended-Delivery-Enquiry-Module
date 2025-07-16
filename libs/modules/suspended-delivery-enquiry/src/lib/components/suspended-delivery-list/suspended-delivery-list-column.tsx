@@ -1,10 +1,10 @@
-import { DropDownMenuItem, SupplierNCRList } from '@cookers/models';
+import { DropDownMenuItem, SuspendedDeliveryList } from '@cookers/models';
 import { configStore } from '@cookers/store';
 import { DropdownMenuList } from '@cookers/ui';
 import { ColumnDef } from '@tanstack/react-table';
 import { useNavigate } from 'react-router-dom';
 
-export const SuspendedDeliveryColumns: ColumnDef<SupplierNCRList>[] = [
+export const SuspendedDeliveryColumns: ColumnDef<SuspendedDeliveryList>[] = [
  
   {
     accessorKey: 'customerCode',

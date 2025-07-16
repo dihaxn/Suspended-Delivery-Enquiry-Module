@@ -1,27 +1,25 @@
-import { DataType, SupplierNCRList as SupplierNcr } from '@cookers/models';
+import { DataType, SuspendedDeliveryList as SuspendedDelivery } from '@cookers/models';
 import { DataTable } from '@cookers/modules/shared';
-import { configStore, setSelectedSupplierNcr } from '@cookers/store';
+import { configStore, setQuickview } from '@cookers/store';
 import { Grid } from '@radix-ui/themes';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { SuspendedDeliveryColumns } from './suspended-delivery-list-column';
 
-const dataType: DataType = 'SupplierNcr';
+const dataType: DataType = 'SupplierNcr'; // or another value that matches your use case
 export const SuspendedDeliveryList = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const onRowClick = (selectObj: SupplierNcr) => {
-    dispatch(setSelectedSupplierNcr(selectObj));
+  const onRowClick = (selectObj: SuspendedDelivery) => {
+    dispatch(setQuickview(selectObj));
   };
 
-  const onRowDoubleClick = (selectObj: SupplierNcr) => {
-    navigate(`/${configStore.appName}/supplier-ncr/${selectObj.supplierNcrId}`);
-  };
+//need to add double click form
 
   return (
     <Grid width="100%" height="100%">
-      <DataTable<SupplierNcr> columns={SuspendedDeliveryColumns} dataType={dataType} onRowClick={onRowClick} onRowDoubleClick={onRowDoubleClick} />
+      <DataTable<SuspendedDelivery> columns={SuspendedDeliveryColumns} dataType={dataType} onRowClick={onRowClick} onRowDoubleClick={onRowClick} />
     </Grid>
   );
 };

@@ -72,6 +72,20 @@ const initialState: SuspendedDeliveryState = {
   totalRecords: 0,
   exportInProgress: false,
   searchInProgress: false,
+  quickview: {
+    customerCode: '',
+    customerName: '',
+    custGroup: '',
+    ETAfresh: new Date(0),
+    ETAUCO: new Date(0),
+    BDMCode: '',
+    carrierCode: '',
+    contact: '',
+    phone: '',
+    mobile: '',
+    email: '',
+    suspensionComments: '',
+  },
 };
 
 // Async thunks for API calls
@@ -210,6 +224,11 @@ const suspendedDeliverySlice = createSlice({
       state.records = [];
       state.totalRecords = 0;
     },
+
+    // Set quickview (selected suspended delivery)
+    setQuickview: (state, action: PayloadAction<any>) => {
+      state.quickview = action.payload;
+    },
   },
   extraReducers: (builder) => {
     // Handle fetchSuspendedDeliveryRecords
@@ -277,6 +296,7 @@ export const {
   setSuspendedDeliveryExportInProgress,
   setSuspendedDeliverySearchInProgress,
   clearSuspendedDeliveryRecords,
+  setQuickview,
 } = suspendedDeliverySlice.actions;
 
 export default suspendedDeliverySlice.reducer;
@@ -291,4 +311,3 @@ export const selectSuspendedDeliveryError = (state: any) => state.suspendedDeliv
 export const selectSuspendedDeliveryExportInProgress = (state: any) => state.suspendedDelivery.exportInProgress;
 export const selectSuspendedDeliverySearchInProgress = (state: any) => state.suspendedDelivery.searchInProgress;
 export const selectSuspendedDeliveryTotalRecords = (state: any) => state.suspendedDelivery.totalRecords;
-
