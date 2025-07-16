@@ -16,11 +16,15 @@ export const SuspendedDeliveryColumns: ColumnDef<SupplierNCRList>[] = [
     accessorKey: 'supplierName',
     header: 'Customer Code',
     size: 150,
+    meta: { filterable: true, filterType: 'number' },
+
   },
   {
     accessorKey: 'classificationName',
     header: 'Customer Name',
     size: 300,
+    meta: { filterable: true, filterType: 'name' },
+
   },
   {
     accessorKey: 'createdDate',
@@ -41,11 +45,15 @@ export const SuspendedDeliveryColumns: ColumnDef<SupplierNCRList>[] = [
     accessorKey: 'suppRespBy',
     header: 'BDM Code',
     size: 150,
+    meta: { filterable: true, filterType: 'number' },
+
   },
   {
     accessorKey: 'productName',
     header: 'Carrier Code',
     size: 150,
+    meta: { filterable: true, filterType: 'number' },
+
   },
   {
     accessorKey: 'closeOutOn',

@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, FormSelect, FormButton, Link } from '@cookers/ui';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as fa from '@fortawesome/free-regular-svg-icons';
+import { Filter, Info, XIcon } from 'lucide-react';
 import { FormProvider, useForm } from 'react-hook-form';
 import {  STORE, useStoreSelector } from '@cookers/store';
 import { custGroupSampleData } from '../util';
@@ -26,7 +27,7 @@ export const SuspendedDeliveryFilters: React.FC = () => {
   return (
     <Box>
       <Flex align="center" gap="3">
-        <FontAwesomeIcon icon={fa.faFile} />
+        <Filter size={18} />
         <Heading size="2" style={{ color: '#162850' }}>
           Search by filter
         </Heading>
