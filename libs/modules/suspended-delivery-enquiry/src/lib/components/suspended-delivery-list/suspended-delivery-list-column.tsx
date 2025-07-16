@@ -7,11 +7,7 @@ import { useNavigate } from 'react-router-dom';
 //import { colorSelectorByStatusName } from '../../util/supplierNcrUtils';
 
 export const SuspendedDeliveryColumns: ColumnDef<SupplierNCRList>[] = [
-  {
-    accessorKey: 'refCode',
-    header: 'Log #',
-    size: 80,
-  },
+ 
   {
     accessorKey: 'supplierName',
     header: 'Customer Code',

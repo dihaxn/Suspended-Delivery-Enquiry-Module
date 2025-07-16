@@ -38,7 +38,7 @@ export const SuspendedDeliveryFilters: React.FC = () => {
           <form onSubmit={methods.handleSubmit(handleOnSubmit)}>
             <FormProvider {...methods}>
               <div>
-                <FormSelect label="Search by customer groups" name="custGroup" defaultValue={'All'} data={custGroupSampleData} />
+                <FormSelect label="Cust Group" name="custGroup" defaultValue={'All'} data={custGroupSampleData} />
                 
                 <Flex gap="5" align="center" flexGrow="1">
                   <FormButton label="Search customer" name="searchincident" size="2" type="submit" />
