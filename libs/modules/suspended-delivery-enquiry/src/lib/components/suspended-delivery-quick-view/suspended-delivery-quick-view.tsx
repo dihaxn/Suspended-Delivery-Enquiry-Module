@@ -40,20 +40,20 @@ export const SuspendedDeliveryQuickView = () => {
         <Flex gap="3" direction="column" p="4">
           <Heading size="4">Suspended Delivery Quick View</Heading>
           <Heading size="2">
-            Customer Code <Badge variant="soft">{quickview.customerCode}</Badge>
+            Customer Code <Badge variant="soft">{quickview?.customerCode}</Badge>
           </Heading>
           <Flex direction="column">
-            {renderField('Customer Name', quickview.customerName)}
-            {renderField('Cust Group', quickview.custGroup)}
-            {renderField('ETA for return - Fresh', quickview.ETAfresh?.toString())}
-            {renderField('ETA for return - UCO', quickview.ETAUCO?.toString())}
-            {renderField('BDM Code', quickview.BDMCode)}
-            {renderField('Carrier Code', quickview.carrierCode)}
-            {renderField('Contact', quickview.contact)}
-            {renderField('Phone', quickview.phone)}
-            {renderField('Mobile', quickview.mobile)}
-            {renderField('Email Address', quickview.email)}
-            {renderField('Suspension Comment', quickview.suspensionComments)}
+            {renderField('Customer Name', quickview?.customerName)}
+            {renderField('Cust Group', quickview?.custGroup)}
+            {renderField('ETA for return - Fresh', quickview?.ETAfresh?.toString())}
+            {renderField('ETA for return - UCO', quickview?.ETAUCO?.toString())}
+            {renderField('BDM Code', quickview?.BDMCode)}
+            {renderField('Carrier Code', quickview?.carrierCode)}
+            {renderField('Contact', quickview?.contact)}
+            {renderField('Phone', quickview?.phone)}
+            {renderField('Mobile', quickview?.mobile)}
+            {renderField('Email Address', quickview?.email)}
+            {renderField('Suspension Comment', quickview?.suspensionComments)}
           </Flex>
         </Flex>
       </ScrollArea>

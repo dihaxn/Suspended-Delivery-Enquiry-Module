@@ -74,13 +74,6 @@ export const SuspendedDeliveryColumns: ColumnDef<SuspendedDeliveryList>[] = [
   },
    {
     id: 'action',
-    cell: ({ row }) => {
-      const navigate = useNavigate();
-      const menuItems: DropDownMenuItem[] = [
-        
-      ];
-      return <DropdownMenuList buttonVariant="soft" items={menuItems} />;
-    },
     enableSorting: false,
     enableHiding: false,
     size: 35,

@@ -1,7 +1,22 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import {  SuspendedDeliveryList } from '@cookers/models';
+// export interface SuspendedDeliveryRecord {
+//   customerCode: string;
+//   name: string;
+//   custGroup: string;
+//   etaFresh?: string;
+//   etaUco?: string;
+//   repCode: string;
+//   carrierCode: string;
+//   contact: string;
+//   telephone: string;
+//   mobile: string;
+//   email: string;
+//   suspendComments: string;
+// }
 
-export interface SuspendedDeliveryRecord {
-  custCode: string;
+export interface quickview {
+  customerCode: string;
   name: string;
   custGroup: string;
   etaFresh?: string;
@@ -16,7 +31,7 @@ export interface SuspendedDeliveryRecord {
 }
 
 export interface FilterState {
-  custGroup: string;
+  customerGroup: string;
   searchcustgroup: string;
   originator?: string;
   proxyUser?: string;
@@ -29,7 +44,7 @@ export interface MasterData {
 }
 
 export interface SuspendedDeliveryState {
-  records: SuspendedDeliveryRecord[];
+  records: SuspendedDeliveryList[];
   filter: FilterState;
   masterData: MasterData;
   loading: boolean;
@@ -37,12 +52,12 @@ export interface SuspendedDeliveryState {
   totalRecords: number;
   exportInProgress: boolean;
   searchInProgress: boolean;
-  quickview: SuspendedDeliveryRecord | null;
+  quickview: SuspendedDeliveryList | null;
 }
 
 // Initial filter state
 export const initialSuspendedDeliveryFilterState: FilterState = {
-  custGroup: '',
+  customerGroup: '',
   searchcustgroup: 'All',
   originator: '',
   proxyUser: '',
@@ -144,7 +159,7 @@ const suspendedDeliverySlice = createSlice({
     setSuspendedDeliveryMasterData(state, action: PayloadAction<Partial<MasterData>>) {
       state.masterData = { ...state.masterData, ...action.payload };
     },
-    setSuspendedDeliveryRecords(state, action: PayloadAction<SuspendedDeliveryRecord[]>) {
+    setSuspendedDeliveryRecords(state, action: PayloadAction<SuspendedDeliveryList[]>) {
       state.records = action.payload;
       state.totalRecords = action.payload.length;
     },
@@ -167,7 +182,7 @@ const suspendedDeliverySlice = createSlice({
       state.records = [];
       state.totalRecords = 0;
     },
-    setQuickview(state, action: PayloadAction<SuspendedDeliveryRecord>) {
+    setQuickview(state, action: PayloadAction<SuspendedDeliveryList>) {
       state.quickview = action.payload;
     },
   },

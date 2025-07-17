@@ -12,7 +12,9 @@ export const SuspendedDeliveryList = () => {
   const dispatch = useDispatch();
 
   const onRowClick = (selectObj: SuspendedDelivery) => {
-    dispatch(setQuickview(selectObj));
+    console.log('Row clicked:', selectObj);
+   dispatch(setQuickview(selectObj));
+
   };
 
 //need to add double click form
