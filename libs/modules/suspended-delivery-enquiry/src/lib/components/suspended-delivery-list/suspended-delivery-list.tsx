@@ -6,15 +6,13 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { SuspendedDeliveryColumns } from './suspended-delivery-list-column';
 
-const dataType: DataType = 'SupplierNcr'; // or another value that matches your use case
+const dataType: DataType = 'SuspendedDelivery'; // or another value that matches your use case
 export const SuspendedDeliveryList = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const onRowClick = (selectObj: SuspendedDelivery) => {
-    console.log('Row clicked:', selectObj);
    dispatch(setQuickview(selectObj));
-
   };
 
 //need to add double click form

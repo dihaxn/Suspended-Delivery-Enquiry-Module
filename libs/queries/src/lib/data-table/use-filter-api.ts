@@ -32,6 +32,9 @@ export const useFilterApi = (dataType: DataType): string => {
     case 'MasterFileLog': {
       return 'master-logs';
     }
+    case 'SuspendedDelivery': {
+      return 'http://localhost:3000/suspended-delivery/suspended-delivery-list';
+    }
     default:
       return '';
   }
