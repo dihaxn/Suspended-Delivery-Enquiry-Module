@@ -1,6 +1,6 @@
 import { DataType, SuspendedDeliveryList as SuspendedDelivery } from '@cookers/models';
 import { DataTable } from '@cookers/modules/shared';
-import { configStore, setQuickview } from '@cookers/store';
+import { configStore, setQuickview, setSuspendedDeliveryLoading } from '@cookers/store';
 import { Grid } from '@radix-ui/themes';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';

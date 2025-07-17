@@ -1,13 +1,4 @@
-import  {SuspendedDeliveryList}  from '@cookers/models';
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
-
-import { clearAllStates } from '../helper/clear-all-states-action';
-
-
-export interface SuspendedDeliveryState{
-  quickview: SuspendedDeliveryList;
-}
+import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 
 export interface SuspendedDeliveryRecord {
   custCode: string;
@@ -29,6 +20,8 @@ export interface FilterState {
   searchcustgroup: string;
   originator?: string;
   proxyUser?: string;
+  dateFrom?: string;
+  dateTo?: string;
 }
 
 export interface MasterData {
@@ -44,6 +37,7 @@ export interface SuspendedDeliveryState {
   totalRecords: number;
   exportInProgress: boolean;
   searchInProgress: boolean;
+  quickview: SuspendedDeliveryRecord | null;
 }
 
 // Initial filter state
@@ -52,10 +46,9 @@ export const initialSuspendedDeliveryFilterState: FilterState = {
   searchcustgroup: 'All',
   originator: '',
   proxyUser: '',
+  dateFrom: '',
+  dateTo: '',
 };
-
-// For backward compatibility
-export const initialCustGroupFilterState = initialSuspendedDeliveryFilterState;
 
 // Default master data
 const defaultMasterData: MasterData = {
@@ -72,80 +65,53 @@ const initialState: SuspendedDeliveryState = {
   totalRecords: 0,
   exportInProgress: false,
   searchInProgress: false,
-  quickview: {
-    customerCode: '',
-    customerName: '',
-    custGroup: '',
-    ETAfresh: new Date(0),
-    ETAUCO: new Date(0),
-    BDMCode: '',
-    carrierCode: '',
-    contact: '',
-    phone: '',
-    mobile: '',
-    email: '',
-    suspensionComments: '',
-  },
+  quickview: null,
 };
 
-// Async thunks for API calls
+// Async thunk: Fetch records
 export const fetchSuspendedDeliveryRecords = createAsyncThunk(
   'suspendedDelivery/fetchRecords',
   async (filterParams: FilterState, { rejectWithValue }) => {
     try {
       const response = await fetch('/api/suspended-delivery/search', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(filterParams),
       });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch suspended delivery records');
-      }
-
+      if (!response.ok) throw new Error('Failed to fetch records');
       const data = await response.json();
       return data.records || [];
     } catch (error) {
-      return rejectWithValue(error instanceof Error ? error.message : 'An error occurred');
+      return rejectWithValue(error instanceof Error ? error.message : 'Error occurred');
     }
   }
 );
 
+// Async thunk: Fetch master data
 export const fetchSuspendedDeliveryMasterData = createAsyncThunk(
   'suspendedDelivery/fetchMasterData',
   async (_, { rejectWithValue }) => {
     try {
       const response = await fetch('/api/suspended-delivery/master-data');
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch master data');
-      }
-
-      const data = await response.json();
-      return data;
+      if (!response.ok) throw new Error('Failed to fetch master data');
+      return await response.json();
     } catch (error) {
-      return rejectWithValue(error instanceof Error ? error.message : 'An error occurred');
+      return rejectWithValue(error instanceof Error ? error.message : 'Error occurred');
     }
   }
 );
 
+// Async thunk: Export records
 export const exportSuspendedDeliveryRecords = createAsyncThunk(
   'suspendedDelivery/exportRecords',
   async (filterParams: FilterState, { rejectWithValue }) => {
     try {
       const response = await fetch('/api/suspended-delivery/export', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(filterParams),
       });
-
-      if (!response.ok) {
-        throw new Error('Failed to export records');
-      }
+      if (!response.ok) throw new Error('Failed to export records');
 
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
@@ -164,74 +130,48 @@ export const exportSuspendedDeliveryRecords = createAsyncThunk(
   }
 );
 
+// Slice
 const suspendedDeliverySlice = createSlice({
   name: 'suspendedDelivery',
   initialState,
   reducers: {
-    // Set filter values
-    setSuspendedDeliveryFilter: (state, action: PayloadAction<Partial<FilterState>>) => {
+    setSuspendedDeliveryFilter(state, action: PayloadAction<Partial<FilterState>>) {
       state.filter = { ...state.filter, ...action.payload };
     },
-
-    // For backward compatibility
-    setCustGroupFilter: (state, action: PayloadAction<Partial<FilterState>>) => {
-      state.filter = { ...state.filter, ...action.payload };
-    },
-
-    // Reset all filters to initial state
-    resetSuspendedDeliveryFilter: (state) => {
+    resetSuspendedDeliveryFilter(state) {
       state.filter = initialSuspendedDeliveryFilterState;
     },
-
-    // Set master data for dropdowns
-    setSuspendedDeliveryMasterData: (state, action: PayloadAction<Partial<MasterData>>) => {
+    setSuspendedDeliveryMasterData(state, action: PayloadAction<Partial<MasterData>>) {
       state.masterData = { ...state.masterData, ...action.payload };
     },
-
-    // Set records after successful fetch
-    setSuspendedDeliveryRecords: (state, action: PayloadAction<SuspendedDeliveryRecord[]>) => {
+    setSuspendedDeliveryRecords(state, action: PayloadAction<SuspendedDeliveryRecord[]>) {
       state.records = action.payload;
       state.totalRecords = action.payload.length;
     },
-
-    // Set loading state
-    setSuspendedDeliveryLoading: (state, action: PayloadAction<boolean>) => {
+    setSuspendedDeliveryLoading(state, action: PayloadAction<boolean>) {
       state.loading = action.payload;
     },
-
-    // Set error message
-    setSuspendedDeliveryError: (state, action: PayloadAction<string | null>) => {
+    setSuspendedDeliveryError(state, action: PayloadAction<string | null>) {
       state.error = action.payload;
     },
-
-    // Clear any existing error
-    clearSuspendedDeliveryError: (state) => {
+    clearSuspendedDeliveryError(state) {
       state.error = null;
     },
-
-    // Set export in progress state
-    setSuspendedDeliveryExportInProgress: (state, action: PayloadAction<boolean>) => {
+    setSuspendedDeliveryExportInProgress(state, action: PayloadAction<boolean>) {
       state.exportInProgress = action.payload;
     },
-
-    // Set search in progress state
-    setSuspendedDeliverySearchInProgress: (state, action: PayloadAction<boolean>) => {
+    setSuspendedDeliverySearchInProgress(state, action: PayloadAction<boolean>) {
       state.searchInProgress = action.payload;
     },
-
-    // Clear all records
-    clearSuspendedDeliveryRecords: (state) => {
+    clearSuspendedDeliveryRecords(state) {
       state.records = [];
       state.totalRecords = 0;
     },
-
-    // Set quickview (selected suspended delivery)
-    setQuickview: (state, action: PayloadAction<any>) => {
+    setQuickview(state, action: PayloadAction<SuspendedDeliveryRecord>) {
       state.quickview = action.payload;
     },
   },
   extraReducers: (builder) => {
-    // Handle fetchSuspendedDeliveryRecords
     builder
       .addCase(fetchSuspendedDeliveryRecords.pending, (state) => {
         state.loading = true;
@@ -243,16 +183,12 @@ const suspendedDeliverySlice = createSlice({
         state.searchInProgress = false;
         state.records = action.payload;
         state.totalRecords = action.payload.length;
-        state.error = null;
       })
       .addCase(fetchSuspendedDeliveryRecords.rejected, (state, action) => {
         state.loading = false;
         state.searchInProgress = false;
         state.error = action.payload as string;
-      });
-
-    // Handle fetchSuspendedDeliveryMasterData
-    builder
+      })
       .addCase(fetchSuspendedDeliveryMasterData.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -260,22 +196,17 @@ const suspendedDeliverySlice = createSlice({
       .addCase(fetchSuspendedDeliveryMasterData.fulfilled, (state, action) => {
         state.loading = false;
         state.masterData = { ...state.masterData, ...action.payload };
-        state.error = null;
       })
       .addCase(fetchSuspendedDeliveryMasterData.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload as string;
-      });
-
-    // Handle exportSuspendedDeliveryRecords
-    builder
+      })
       .addCase(exportSuspendedDeliveryRecords.pending, (state) => {
         state.exportInProgress = true;
         state.error = null;
       })
       .addCase(exportSuspendedDeliveryRecords.fulfilled, (state) => {
         state.exportInProgress = false;
-        state.error = null;
       })
       .addCase(exportSuspendedDeliveryRecords.rejected, (state, action) => {
         state.exportInProgress = false;
@@ -284,9 +215,9 @@ const suspendedDeliverySlice = createSlice({
   },
 });
 
+// Exports
 export const {
   setSuspendedDeliveryFilter,
-  setCustGroupFilter,
   resetSuspendedDeliveryFilter,
   setSuspendedDeliveryMasterData,
   setSuspendedDeliveryRecords,

@@ -13,4 +13,3 @@ export interface SuspendedDeliveryList {
     suspensionComments: string;
 }
 
-export default SuspendedDeliveryList;

@@ -8,11 +8,8 @@ import { useState } from 'react';
 import { IconButton } from '@radix-ui/themes';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'libs/ui/src/lib/shadcn/tooltip';
 import { FileBarChart } from 'lucide-react';
-//import { downloadSupplierNcrCSV } from '../queries/download-csv-query';
-//import { downloadSupplierNcrAnalysisReport } from '../queries/use-supplier-analysis-query';
+import { downloadSuspendedDeliveryCSV } from '../queries/download-suspended-delivery-query';
 import { convertBase64ToBlob } from '@cookers/utils';
-//import { SupplierNcrAnalysisReport } from '../components/supplier-ncr-analysis/supplier-ncr-analysis-report';
-//import { SupplierNcrAnalysisFormData } from '@cookers/models';
 export function SuspendedDeliveryPage () {
  
  /*
@@ -25,7 +22,7 @@ export function SuspendedDeliveryPage () {
   };
 
   const handleCSVDownload = async () => {
-    const supplierNCRListDocData = await downloadSupplierNcrCSV(filter);
+    const supplierNCRListDocData = await downloadSuspendedDeliveryCSV(filter);
 
     if (supplierNCRListDocData) {
       const base64DocumentFile = supplierNCRListDocData.documentFile;
@@ -36,8 +33,8 @@ export function SuspendedDeliveryPage () {
     }
   };
   
-
-  */
+*/
+  
   const openWindow = (URL: string) => {
     window.open(URL, '_blank');
   };

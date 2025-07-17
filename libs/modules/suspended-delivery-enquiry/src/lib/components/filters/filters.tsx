@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, FormSelect, FormButton, Link } from '@cookers/ui';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as fa from '@fortawesome/free-regular-svg-icons';
 import { Filter, Info, XIcon } from 'lucide-react';
 import { FormProvider, useForm } from 'react-hook-form';
@@ -7,22 +6,32 @@ import {  STORE, useStoreSelector } from '@cookers/store';
 import { custGroupSampleData } from '../util';
 import { useDispatch } from 'react-redux';
 import { useCommonFilterAppender } from '@cookers/modules/shared';
+import { initialSuspendedDeliveryFilterState, setSuspendedDeliveryFilter } from '@cookers/store';
 
 export const SuspendedDeliveryFilters: React.FC = () => {
-  const dispatch = useDispatch();
-  //const { filter, masterData } = useStoreSelector(STORE.CustGroup);
-  const { globalMasterData } = useStoreSelector(STORE.GlobalMaster);
-  //const commonFilters = useCommonFilterAppender((payload: any) => (dispatch) => dispatch(setCustGroupFilter(payload)), filter);
-  const methods = useForm({
-   // defaultValues: filter,
-  });
-  const handleClearFilter = () => {
-   
-  };
+const dispatch = useDispatch();
+    const { filter, masterData } = useStoreSelector(STORE.SuspendedDelivery);
+    const { globalMasterData } = useStoreSelector(STORE.GlobalMaster);
+    const commonFilters = useCommonFilterAppender((payload: any) => (dispatch) => dispatch(setSuspendedDeliveryFilter(payload)), filter);
+    const methods = useForm({
+      defaultValues: filter,
+    });
+    const handleClearFilter = () => {
+      const updatedFilter = {
+        ...initialSuspendedDeliveryFilterState,
+        originator: commonFilters.originator,
+        proxyUser: commonFilters.proxyUser,
+      }
+      dispatch(setSuspendedDeliveryFilter(updatedFilter));
+      methods.reset(updatedFilter);
+    };
 
-  const handleOnSubmit = () => {
-    
-  };
+    const handleOnSubmit = (data: any) => {
+      data.dateFrom = new Date(data.dateFrom).toISOString();
+      data.dateTo = new Date(data.dateTo).toISOString();
+      dispatch(setSuspendedDeliveryFilter(data));
+    };
+
 
   return (
     <Box>
