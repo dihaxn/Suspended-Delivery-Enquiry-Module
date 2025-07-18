@@ -1,15 +1,20 @@
-import { DocDetailModel, SuspendedDeliveryList} from '@cookers/models';
+import { DocDetailModel, SuspendedDeliveryFilters } from '@cookers/models';
 import { getAxiosInstance } from "@cookers/services";
 
-export const downloadSuspendedDeliveryCSV = async (data: SuspendedDeliveryList) => {
-    console.log(getAxiosInstance());
+export const downloadSuspendedDeliveryCSV = async (
+  data: SuspendedDeliveryFilters
+): Promise<DocDetailModel | undefined> => {
+  console.log(getAxiosInstance());
 
   try {
-    const response = await getAxiosInstance().get<DocDetailModel>(`suspended-delivery/export`,  { params: data });
-    
+    const response = await getAxiosInstance().get<DocDetailModel>(
+      `suspended-delivery/export`,
+      { params: data }
+    );
+
     return response.data;
   } catch (error) {
-    console.error("Error in Downlading Data:", error);
-    
+    console.error("Error in Downloading Data:", error);
+    return undefined;
   }
 };

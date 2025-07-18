@@ -3,7 +3,6 @@ import { STORE, useStoreSelector } from '@cookers/store';
 import { Badge ,Flex, Heading, ScrollArea, Text } from '@radix-ui/themes';
 
 export const SuspendedDeliveryQuickView = () => {
-  // Use quickview from SuspendedDelivery slice
   const { quickview } = useStoreSelector(STORE.SuspendedDelivery);
 
   console.log(quickview);

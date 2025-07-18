@@ -1,8 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import {  SuspendedDeliveryList , SuspendedDeliveryFilters, initialSuspendedDeliveryFilterState, MasterData, SuspendedDeliveryState, defaultMasterData } from '@cookers/models';
 
-
-// Initial state
 const initialState: SuspendedDeliveryState = {
   records: [],
   filter: initialSuspendedDeliveryFilterState,
@@ -76,7 +74,6 @@ export const exportSuspendedDeliveryRecords = createAsyncThunk(
   }
 );
 
-// Slice
 const suspendedDeliverySlice = createSlice({
   name: 'suspendedDelivery',
   initialState,
