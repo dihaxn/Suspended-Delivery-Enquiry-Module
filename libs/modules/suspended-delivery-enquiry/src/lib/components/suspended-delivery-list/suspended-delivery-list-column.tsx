@@ -24,7 +24,7 @@ export const SuspendedDeliveryColumns: ColumnDef<SuspendedDeliveryList>[] = [
     accessorKey: 'custGroup',
     header: 'Cust Group',
     size: 150,
-  },
+    },
   {
     accessorKey: 'ETAFresh',
     header: 'ETA for return - Fresh',

@@ -1,7 +1,7 @@
-import { DocDetailModel, SuspendedDeliveryFilters} from '@cookers/models';
+import { DocDetailModel, SuspendedDeliveryList} from '@cookers/models';
 import { getAxiosInstance } from "@cookers/services";
 
-export const downloadSuspendedDeliveryCSV = async (data: SuspendedDeliveryFilters) => {
+export const downloadSuspendedDeliveryCSV = async (data: SuspendedDeliveryList) => {
     console.log(getAxiosInstance());
 
   try {

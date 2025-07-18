@@ -12,28 +12,28 @@ import { downloadSuspendedDeliveryCSV } from '../queries/download-suspended-deli
 import { convertBase64ToBlob } from '@cookers/utils';
 export function SuspendedDeliveryPage () {
  
- /*
-  const { selectedSupplierNcrId, masterData, filter } = useStoreSelector(STORE.SupplierNcr);
-  const [isConfirmOpen, setConfirmOpen] = useState(false);
-  const navigate = useNavigate();
-  const analysisReportData = masterData.showAnalysisReport;
-  const handlebuttonclick = () => {
-    navigate(`/${configStore.appName}/supplier-ncr/new`);
-  };
+ 
+  // const { selectedSuspended, masterData, filter } = useStoreSelector(STORE.SuspendedDelivery);
+  // const [isConfirmOpen, setConfirmOpen] = useState(false);
+  // const navigate = useNavigate();
+  // const analysisReportData = masterData.showAnalysisReport;
+  // const handlebuttonclick = () => {
+  //   navigate(`/${configStore.appName}/suspended-delivery/new`);
+  // };
 
-  const handleCSVDownload = async () => {
-    const supplierNCRListDocData = await downloadSuspendedDeliveryCSV(filter);
+  // const handleCSVDownload = async () => {
+  //   const supplierNCRListDocData = await downloadSuspendedDeliveryCSV(filter);
 
-    if (supplierNCRListDocData) {
-      const base64DocumentFile = supplierNCRListDocData.documentFile;
-      const mimeType = supplierNCRListDocData.detailedExtension;
-      const blob = convertBase64ToBlob(base64DocumentFile, mimeType);
-      const objURL = URL.createObjectURL(blob);
-      openWindow(objURL);
-    }
-  };
+  //   if (supplierNCRListDocData) {
+  //     const base64DocumentFile = supplierNCRListDocData.documentFile;
+  //     const mimeType = supplierNCRListDocData.detailedExtension;
+  //     const blob = convertBase64ToBlob(base64DocumentFile, mimeType);
+  //     const objURL = URL.createObjectURL(blob);
+  //     openWindow(objURL);
+  //   }
+  // };
   
-*/
+
   
   const openWindow = (URL: string) => {
     window.open(URL, '_blank');

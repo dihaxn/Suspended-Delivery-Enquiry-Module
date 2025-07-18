@@ -1,74 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import {  SuspendedDeliveryList } from '@cookers/models';
-// export interface SuspendedDeliveryRecord {
-//   customerCode: string;
-//   name: string;
-//   custGroup: string;
-//   etaFresh?: string;
-//   etaUco?: string;
-//   repCode: string;
-//   carrierCode: string;
-//   contact: string;
-//   telephone: string;
-//   mobile: string;
-//   email: string;
-//   suspendComments: string;
-// }
+import {  SuspendedDeliveryList , SuspendedDeliveryFilters, initialSuspendedDeliveryFilterState, MasterData, SuspendedDeliveryState, defaultMasterData } from '@cookers/models';
 
-export interface quickview {
-  customerCode: string;
-  name: string;
-  custGroup: string;
-  etaFresh?: string;
-  etaUco?: string;
-  repCode: string;
-  carrierCode: string;
-  contact: string;
-  telephone: string;
-  mobile: string;
-  email: string;
-  suspendComments: string;
-}
-
-export interface FilterState {
-  customerGroup: string;
-  searchcustgroup: string;
-  originator?: string;
-  proxyUser?: string;
-  dateFrom?: string;
-  dateTo?: string;
-}
-
-export interface MasterData {
-  custgroupList: Array<{ id: string; name: string; value: string }>;
-}
-
-export interface SuspendedDeliveryState {
-  records: SuspendedDeliveryList[];
-  filter: FilterState;
-  masterData: MasterData;
-  loading: boolean;
-  error: string | null;
-  totalRecords: number;
-  exportInProgress: boolean;
-  searchInProgress: boolean;
-  quickview: SuspendedDeliveryList | null;
-}
-
-// Initial filter state
-export const initialSuspendedDeliveryFilterState: FilterState = {
-  customerGroup: '',
-  searchcustgroup: 'All',
-  originator: '',
-  proxyUser: '',
-  dateFrom: '',
-  dateTo: '',
-};
-
-// Default master data
-const defaultMasterData: MasterData = {
-  custgroupList: [],
-};
 
 // Initial state
 const initialState: SuspendedDeliveryState = {
@@ -83,10 +15,9 @@ const initialState: SuspendedDeliveryState = {
   quickview: null,
 };
 
-// Async thunk: Fetch records
 export const fetchSuspendedDeliveryRecords = createAsyncThunk(
   'suspendedDelivery/fetchRecords',
-  async (filterParams: FilterState, { rejectWithValue }) => {
+  async (filterParams: SuspendedDeliveryFilters, { rejectWithValue }) => {
     try {
       const response = await fetch('/api/suspended-delivery/search', {
         method: 'POST',
@@ -119,7 +50,7 @@ export const fetchSuspendedDeliveryMasterData = createAsyncThunk(
 // Async thunk: Export records
 export const exportSuspendedDeliveryRecords = createAsyncThunk(
   'suspendedDelivery/exportRecords',
-  async (filterParams: FilterState, { rejectWithValue }) => {
+  async (filterParams: SuspendedDeliveryFilters, { rejectWithValue }) => {
     try {
       const response = await fetch('/api/suspended-delivery/export', {
         method: 'POST',
@@ -150,7 +81,7 @@ const suspendedDeliverySlice = createSlice({
   name: 'suspendedDelivery',
   initialState,
   reducers: {
-    setSuspendedDeliveryFilter(state, action: PayloadAction<Partial<FilterState>>) {
+    setSuspendedDeliveryFilter(state, action: PayloadAction<Partial<SuspendedDeliveryFilters>>) {
       state.filter = { ...state.filter, ...action.payload };
     },
     resetSuspendedDeliveryFilter(state) {

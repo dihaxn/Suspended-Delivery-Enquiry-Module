@@ -1,6 +1,14 @@
 export interface SuspendedDeliveryFilters {
-  custGroup: string;
-  proxyUser: string;
-  originator: string;
+  customerGroup: string;
+  searchcustgroup: string;
+  originator?: string;
+  proxyUser?: string;
 }
+
+export const initialSuspendedDeliveryFilterState: SuspendedDeliveryFilters = {
+  customerGroup: '',
+  searchcustgroup: 'All',
+  originator: '',
+  proxyUser: '',
+};
 
