@@ -3,7 +3,7 @@ export interface SuspendedDeliveryList {
     customerName: string;
     custGroup: string;
     ETAfresh: Date;
-    ETAUCO:Date;
+    ETAUCO: Date;
     BDMCode: string;
     carrierCode: string;
     contact: string;

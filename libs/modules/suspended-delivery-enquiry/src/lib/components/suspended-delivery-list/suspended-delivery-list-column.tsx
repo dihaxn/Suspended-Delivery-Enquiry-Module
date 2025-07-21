@@ -7,14 +7,14 @@ export const SuspendedDeliveryColumns: ColumnDef<SuspendedDeliveryList>[] = [
     accessorKey: 'customerCode',
     header: 'Customer Code',
     size: 150,
-    meta: { filterable: true, filterType: 'number' },
+    meta: { filterable: true, filterType: 'string' },
 
   },
   {
     accessorKey: 'customerName',
     header: 'Customer Name',
     size: 300,
-    meta: { filterable: true, filterType: 'name' },
+    meta: { filterable: true, filterType: 'string' },
 
   },
   {
@@ -36,14 +36,14 @@ export const SuspendedDeliveryColumns: ColumnDef<SuspendedDeliveryList>[] = [
     accessorKey: 'BDMCode',
     header: 'BDM Code',
     size: 150,
-    meta: { filterable: true, filterType: 'number' },
+    meta: { filterable: true, filterType: 'string' },
 
   },
   {
     accessorKey: 'carrierCode',
     header: 'Carrier Code',
     size: 150,
-    meta: { filterable: true, filterType: 'number' },
+    meta: { filterable: true, filterType: 'string' },
 
   },
   {

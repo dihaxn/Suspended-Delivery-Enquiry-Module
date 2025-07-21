@@ -1,23 +1,72 @@
-import { useMemo } from 'react';
 import { STORE, useStoreSelector } from '@cookers/store';
-import { Badge ,Flex, Heading, ScrollArea, Text } from '@radix-ui/themes';
+import { Badge, Button, Flex, Heading, ScrollArea, Separator, Text } from '@radix-ui/themes';
+import React, { useEffect, useMemo, useState } from 'react';
+import { FormButton } from '@cookers/ui';
+import { fetchSuspendedDeliveryViewData } from '../../queries';
+import { SuspendedDeliveryList } from '@cookers/models';
+import { colorSelectorByStatusName } from '../util';
 
-export const SuspendedDeliveryQuickView = () => {
-  const { quickview } = useStoreSelector(STORE.SuspendedDelivery);
 
-  console.log(quickview);
+export const SuspendedDeliveryQuickView: React.FC = () => {
+  const { quickview  } = useStoreSelector(STORE.SuspendedDelivery);
+  const [suspendedDeliveryData, setSuspendedDeliveryData] = useState<SuspendedDeliveryList | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadVisible, setLoadVisible] = useState(true);
+  const [loadMore, setLoadMore] = useState(false);
   const isVisible = useMemo(() => {
     return !quickview || Object.keys(quickview).length === 0 || quickview.customerCode === '';
   }, [quickview]);
 
-  const renderField = (label:string, value:string |number| undefined) => {
-    return (<Text size="1">
-      {label}:{' '}
-      <Text size="1" weight="bold">
-        {value || '---'}
+  // const handleLoad = async () => {
+  //   setIsLoading(true);
+  //   setError(null);
+  //   try {
+  //     const data = await fetchSuspendedDeliveryViewData(quickview?.customerCode || "0 ");
+  //     setSuspendedDeliveryData(data);
+  //     setLoadVisible(false);
+  //     setLoadMore(true);
+  //   } catch (err: any) {
+  //     setError(err.message || 'Error loading order data');
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+
+  useEffect(() => {
+    if (quickview) {
+      setLoadVisible(true);
+      setLoadMore(false);
+    }
+  }, [quickview]);
+
+  const renderField = (label: string, value: string | undefined) => {
+    return (
+      <Text size="1">
+        {label}:{' '}
+        <Text size="1" weight="bold">
+          {value || '---'}
+        </Text>
       </Text>
-    </Text>)
-  }
+    );
+  };
+
+  const renderSuspendedDeliveryDetails = () => (
+    <Flex direction="column">
+      <Heading size="2">Suspended Delivery Details</Heading>
+          {renderField('Customer Name', quickview?.customerName)}
+          {renderField('Cust Group', quickview?.custGroup)}
+          {renderField('ETA for return - Fresh', quickview?.ETAfresh?.toString())}
+          {renderField('ETA for return - UCO', quickview?.ETAUCO?.toString())}
+          {renderField('BDM Code', quickview?.BDMCode)}         
+          {renderField('Carrier Code', quickview?.carrierCode)}
+          {renderField('Contact', quickview?.contact)}
+          {renderField('Phone', quickview?.phone)}       
+          {renderField('Mobile', quickview?.mobile)}
+          {renderField('Email Address', quickview?.email)}
+          {renderField('Suspension Comment', quickview?.suspensionComments)}
+    </Flex>
+  );
 
   return isVisible ? (
     <Flex gap="3" direction="column" width="100%" maxWidth="400px" height="100%">
@@ -41,19 +90,8 @@ export const SuspendedDeliveryQuickView = () => {
           <Heading size="2">
             Customer Code <Badge variant="soft">{quickview?.customerCode}</Badge>
           </Heading>
-          <Flex direction="column">
-            {renderField('Customer Name', quickview?.customerName)}
-            {renderField('Cust Group', quickview?.custGroup)}
-            {renderField('ETA for return - Fresh', quickview?.ETAfresh?.toString())}
-            {renderField('ETA for return - UCO', quickview?.ETAUCO?.toString())}
-            {renderField('BDM Code', quickview?.BDMCode)}
-            {renderField('Carrier Code', quickview?.carrierCode)}
-            {renderField('Contact', quickview?.contact)}
-            {renderField('Phone', quickview?.phone)}
-            {renderField('Mobile', quickview?.mobile)}
-            {renderField('Email Address', quickview?.email)}
-            {renderField('Suspension Comment', quickview?.suspensionComments)}
-          </Flex>
+          {renderSuspendedDeliveryDetails()}
+          <Separator orientation="horizontal" size="4" color="indigo" />
         </Flex>
       </ScrollArea>
     </Flex>
@@ -61,3 +99,6 @@ export const SuspendedDeliveryQuickView = () => {
 };
 
 export default SuspendedDeliveryQuickView;
+
+
+
