@@ -1,6 +1,4 @@
 export interface SuspendedDeliveryFilters {
-  customerGroup: string;
-  searchcustgroup: string;
   originator?: string;
   proxyUser?: string;
   customerCode: string;
@@ -18,13 +16,11 @@ export interface SuspendedDeliveryFilters {
 }
 
 export const initialSuspendedDeliveryFilterState: SuspendedDeliveryFilters = {
-  customerGroup: '',
-  searchcustgroup: 'All',
   originator: '',
   proxyUser: '',
   customerCode: '',
   customerName: '',
-  custGroup: '',
+  custGroup: 'All',
   ETAfresh: new Date(),
   ETAUCO: new Date(),
   BDMCode: '',

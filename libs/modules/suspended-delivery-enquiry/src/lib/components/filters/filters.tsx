@@ -1,59 +1,53 @@
-import { Box, Flex, Heading, FormSelect, FormButton, Link } from '@cookers/ui';
+import { Box, Flex, Heading, FormButton, Link, FormInputAutoCompleteVirtualized } from '@cookers/ui';
 import { Filter } from 'lucide-react';
 import { FormProvider, useForm } from 'react-hook-form';
 import {  STORE, useStoreSelector } from '@cookers/store';
 import { useDispatch } from 'react-redux';
 import { useCommonFilterAppender } from '@cookers/modules/shared';
 import {initialSuspendedDeliveryFilterState } from '@cookers/models';
-import { setSuspendedDeliveryFilter } from '@cookers/store';
+import { setSuspendedDeliveryFilter , suspendedDeliveryFilter} from '@cookers/store';
+import { AddAllItemOption } from '@cookers/utils';
+import { useMemo } from 'react';
 
-// Customer group data extracted from suspended-delivery-list.json
-const data1 = [
-  { value: 'All', label: 'All' },
-  { value: 'A', label: 'A' },
-  { value: 'B', label: 'B' },
-  { value: 'C', label: 'C' },
-  { value: 'D', label: 'D' },
-  { value: 'E', label: 'E' }
-];
 
 export const SuspendedDeliveryFilters: React.FC = () => {
-const dispatch = useDispatch();
-    const { filter, masterData } = useStoreSelector(STORE.SuspendedDelivery);
-    const { globalMasterData } = useStoreSelector(STORE.GlobalMaster);
-    const commonFilters = useCommonFilterAppender((payload: any) => (dispatch) => dispatch(setSuspendedDeliveryFilter(payload)), filter);
-    const methods = useForm({
-      defaultValues: filter,
-    });
-    const handleClearFilter = () => {
-      const updatedFilter = {
-        ...initialSuspendedDeliveryFilterState,
-        originator: commonFilters.originator,
-        proxyUser: commonFilters.proxyUser,
-      }
-      dispatch(setSuspendedDeliveryFilter(updatedFilter));
-      methods.reset(updatedFilter);
-    };
 
-    const handleOnSubmit = (data: any) => {
-      // Only convert to ISO string if the date values exist and are valid
-      if (data.dateFrom && data.dateFrom !== '') {
-        const dateFrom = new Date(data.dateFrom);
-        if (!isNaN(dateFrom.getTime())) {
-          data.dateFrom = dateFrom.toISOString();
-        }
-      }
+        const { filter, masterData } = useStoreSelector(STORE.SuspendedDelivery);
+        const dispatch = useDispatch();
+        const commonFilters = useCommonFilterAppender((payload: any) => (dispatch) => dispatch(suspendedDeliveryFilter(payload)), filter);
+        
+       
+        const custGroupList = useMemo(() => AddAllItemOption(masterData.custGroup), [masterData.custGroup]);
+        
+        const methods = useForm({
+          defaultValues: {
+            custGroup: custGroupList.find((item) => item.value === filter.custGroup) || { label: '', value: '' },
+            originator: commonFilters.originator,
+            proxyUser: commonFilters.proxyUser
+          },
+        });
       
-      if (data.dateTo && data.dateTo !== '') {
-        const dateTo = new Date(data.dateTo);
-        if (!isNaN(dateTo.getTime())) {
-          data.dateTo = dateTo.toISOString();
-        }
-      }
+    
+        const handleOnSubmit = async (data: any) => {
+    
+          if (data.custGroup?.value && data.custGroup.value.trim()) {
+            data.custGroup = data.custGroup.value.trim();
+          } else {
+            data.custGroup = '';
+          }
+          console.log("filterdata", data)
+          dispatch(setSuspendedDeliveryFilter(data));
+        };
+    
+        const handleClearFilter = () => {
+          const resetValues = {
+            ...initialSuspendedDeliveryFilterState,
+                custGroup: 'All', 
+          };
+          dispatch(setSuspendedDeliveryFilter({ ...resetValues}));
+          methods.reset(resetValues);
+        };
       
-      dispatch(setSuspendedDeliveryFilter(data));
-    };
-
 
   return (
     <Box>
@@ -69,8 +63,7 @@ const dispatch = useDispatch();
           <form onSubmit={methods.handleSubmit(handleOnSubmit)}>
             <FormProvider {...methods}>
               <div>
-                <FormSelect label="Cust Group" name="custGroup" defaultValue={'All'} data={data1} />
-                
+                  <FormInputAutoCompleteVirtualized label="Cust Group" name="custGroup" options ={custGroupList.map((item) => ({label: item.label.trim(),value: item.value.trim(),}))}/>                
                 <Flex gap="5" align="center" flexGrow="1">
                   <FormButton label="Search customer" name="searchincident" size="2" type="submit" />
                   <Link

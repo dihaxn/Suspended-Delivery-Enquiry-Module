@@ -1,22 +1,9 @@
-import { SuspendedDeliveryFilters } from "./suspended-delivery-filters";
-import { SuspendedDeliveryList } from "./suspended-delivery-list";
+import { LookupTable } from '../shared/lookup-table';
 
-export interface MasterData {
-  custgroupList: Array<{ id: string; name: string; value: string }>;
+export interface SuspendedDeliveryMasterData {
+  custGroup: LookupTable[];
 }
 
-export interface SuspendedDeliveryState {
-  records: SuspendedDeliveryList[];
-  filter: SuspendedDeliveryFilters;
-  masterData: MasterData;
-  loading: boolean;
-  error: string | null;
-  totalRecords: number;
-  exportInProgress: boolean;
-  searchInProgress: boolean;
-  quickview: SuspendedDeliveryList | null;
-}
-
-export const defaultMasterData: MasterData = {
-  custgroupList: [],
+export const defaultSuspendedDeliveryMasterData: SuspendedDeliveryMasterData = {
+  custGroup: [{ label: 'All', value: 'all' }],
 };

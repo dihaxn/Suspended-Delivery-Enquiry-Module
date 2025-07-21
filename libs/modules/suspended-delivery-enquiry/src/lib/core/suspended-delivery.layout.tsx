@@ -1,13 +1,13 @@
 import { useSetPageState } from '@cookers/global-hooks';
-import { useSupplierNcrMasterDataQuery } from '@cookers/queries';
-import { setCloseOutBlockReadOnly, setDetailBlockReadOnly, setResponseBlockReadOnly, setSupplierNcrMasterData } from '@cookers/store';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Outlet } from 'react-router-dom';
+import { useSuspendedDeliveryMasterDataQuery } from '../queries';
+import { setSuspendedDeliveryMasterData } from '@cookers/store';
 
 export function SuspendedDeliveryLayout() {
   useSetPageState('Suspended Delivery');
-  //useFetchSupplierNcrMasterDataQuery();
+  useSuspendedDeliveryDataQuery();
 
   return <Outlet />;
 }
@@ -15,13 +15,12 @@ export function SuspendedDeliveryLayout() {
 export default SuspendedDeliveryLayout;
 
 
-/*
-const useFetchSupplierNcrMasterDataQuery = () => {
+
+const useSuspendedDeliveryDataQuery = () => {
   const dispatch = useDispatch();
-  const { supplierNcrMasterData } = useSupplierNcrMasterDataQuery();
+  const { SuspendedDeliveryMasterData } = useSuspendedDeliveryMasterDataQuery();
   useEffect(() => {
-    if (!supplierNcrMasterData) return;
-    dispatch(setSupplierNcrMasterData(supplierNcrMasterData));
-  }, [supplierNcrMasterData, dispatch]);
+    if (!SuspendedDeliveryMasterData) return;
+    dispatch(setSuspendedDeliveryMasterData(SuspendedDeliveryMasterData));
+  }, [SuspendedDeliveryMasterData, dispatch]);
 };
-*/

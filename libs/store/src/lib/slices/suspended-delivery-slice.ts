@@ -1,10 +1,24 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import {  SuspendedDeliveryList , SuspendedDeliveryFilters, initialSuspendedDeliveryFilterState, MasterData, SuspendedDeliveryState, defaultMasterData } from '@cookers/models';
+import {  SuspendedDeliveryList , SuspendedDeliveryFilters, initialSuspendedDeliveryFilterState, SuspendedDeliveryMasterData , defaultSuspendedDeliveryMasterData} from '@cookers/models';
+
+
+export interface SuspendedDeliveryState {
+  records: SuspendedDeliveryList[];
+  filter: SuspendedDeliveryFilters;
+  masterData: SuspendedDeliveryMasterData;
+  loading: boolean;
+  error: string | null;
+  totalRecords: number;
+  exportInProgress: boolean;
+  searchInProgress: boolean;
+  quickview: SuspendedDeliveryList | null;
+}
+
 
 const initialState: SuspendedDeliveryState = {
   records: [],
   filter: initialSuspendedDeliveryFilterState,
-  masterData: defaultMasterData,
+  masterData: defaultSuspendedDeliveryMasterData,
   loading: false,
   error: null,
   totalRecords: 0,
@@ -84,7 +98,7 @@ const suspendedDeliverySlice = createSlice({
     resetSuspendedDeliveryFilter(state) {
       state.filter = initialSuspendedDeliveryFilterState;
     },
-    setSuspendedDeliveryMasterData(state, action: PayloadAction<Partial<MasterData>>) {
+    setSuspendedDeliveryMasterData(state, action: PayloadAction<Partial<SuspendedDeliveryMasterData>>) {
       state.masterData = { ...state.masterData, ...action.payload };
     },
     setSuspendedDeliveryRecords(state, action: PayloadAction<SuspendedDeliveryList[]>) {
@@ -113,6 +127,9 @@ const suspendedDeliverySlice = createSlice({
     setQuickview(state, action: PayloadAction<SuspendedDeliveryList>) {
       state.quickview = action.payload;
     },
+     suspendedDeliveryFilter: (state, action) => {
+          state.filter = action.payload;
+        },
   },
   extraReducers: (builder) => {
     builder
@@ -170,6 +187,7 @@ export const {
   setSuspendedDeliveryExportInProgress,
   setSuspendedDeliverySearchInProgress,
   clearSuspendedDeliveryRecords,
+  suspendedDeliveryFilter,
   setQuickview,
 } = suspendedDeliverySlice.actions;
 
