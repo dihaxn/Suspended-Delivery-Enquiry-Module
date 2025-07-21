@@ -101,4 +101,3 @@ export const SuspendedDeliveryQuickView: React.FC = () => {
 export default SuspendedDeliveryQuickView;
 
 
-

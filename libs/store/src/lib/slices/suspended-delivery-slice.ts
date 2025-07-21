@@ -91,7 +91,6 @@ export const {
 
 export default suspendedDeliverySlice.reducer;
 
-// Selectors
 export const selectSuspendedDeliveryState = (state: any) => state.suspendedDelivery;
 export const selectSuspendedDeliveryRecords = (state: any) => state.suspendedDelivery.records;
 export const selectSuspendedDeliveryFilter = (state: any) => state.suspendedDelivery.filter;
