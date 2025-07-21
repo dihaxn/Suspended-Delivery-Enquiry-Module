@@ -27,67 +27,6 @@ const initialState: SuspendedDeliveryState = {
   quickview: null,
 };
 
-export const fetchSuspendedDeliveryRecords = createAsyncThunk(
-  'suspendedDelivery/fetchRecords',
-  async (filterParams: SuspendedDeliveryFilters, { rejectWithValue }) => {
-    try {
-      const response = await fetch('/api/suspended-delivery/search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(filterParams),
-      });
-      if (!response.ok) throw new Error('Failed to fetch records');
-      const data = await response.json();
-      return data.records || [];
-    } catch (error) {
-      return rejectWithValue(error instanceof Error ? error.message : 'Error occurred');
-    }
-  }
-);
-
-// Async thunk: Fetch master data
-export const fetchSuspendedDeliveryMasterData = createAsyncThunk(
-  'suspendedDelivery/fetchMasterData',
-  async (_, { rejectWithValue }) => {
-    try {
-      const response = await fetch('/api/suspended-delivery/master-data');
-      if (!response.ok) throw new Error('Failed to fetch master data');
-      return await response.json();
-    } catch (error) {
-      return rejectWithValue(error instanceof Error ? error.message : 'Error occurred');
-    }
-  }
-);
-
-// Async thunk: Export records
-export const exportSuspendedDeliveryRecords = createAsyncThunk(
-  'suspendedDelivery/exportRecords',
-  async (filterParams: SuspendedDeliveryFilters, { rejectWithValue }) => {
-    try {
-      const response = await fetch('/api/suspended-delivery/export', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(filterParams),
-      });
-      if (!response.ok) throw new Error('Failed to export records');
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `suspended-delivery-${new Date().toISOString().split('T')[0]}.xlsx`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
-
-      return true;
-    } catch (error) {
-      return rejectWithValue(error instanceof Error ? error.message : 'Export failed');
-    }
-  }
-);
-
 const suspendedDeliverySlice = createSlice({
   name: 'suspendedDelivery',
   initialState,
@@ -131,48 +70,7 @@ const suspendedDeliverySlice = createSlice({
           state.filter = action.payload;
         },
   },
-  extraReducers: (builder) => {
-    builder
-      .addCase(fetchSuspendedDeliveryRecords.pending, (state) => {
-        state.loading = true;
-        state.searchInProgress = true;
-        state.error = null;
-      })
-      .addCase(fetchSuspendedDeliveryRecords.fulfilled, (state, action) => {
-        state.loading = false;
-        state.searchInProgress = false;
-        state.records = action.payload;
-        state.totalRecords = action.payload.length;
-      })
-      .addCase(fetchSuspendedDeliveryRecords.rejected, (state, action) => {
-        state.loading = false;
-        state.searchInProgress = false;
-        state.error = action.payload as string;
-      })
-      .addCase(fetchSuspendedDeliveryMasterData.pending, (state) => {
-        state.loading = true;
-        state.error = null;
-      })
-      .addCase(fetchSuspendedDeliveryMasterData.fulfilled, (state, action) => {
-        state.loading = false;
-        state.masterData = { ...state.masterData, ...action.payload };
-      })
-      .addCase(fetchSuspendedDeliveryMasterData.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.payload as string;
-      })
-      .addCase(exportSuspendedDeliveryRecords.pending, (state) => {
-        state.exportInProgress = true;
-        state.error = null;
-      })
-      .addCase(exportSuspendedDeliveryRecords.fulfilled, (state) => {
-        state.exportInProgress = false;
-      })
-      .addCase(exportSuspendedDeliveryRecords.rejected, (state, action) => {
-        state.exportInProgress = false;
-        state.error = action.payload as string;
-      });
-  },
+  
 });
 
 // Exports

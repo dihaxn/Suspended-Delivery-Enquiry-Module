@@ -5,5 +5,5 @@ export interface SuspendedDeliveryMasterData {
 }
 
 export const defaultSuspendedDeliveryMasterData: SuspendedDeliveryMasterData = {
-  custGroup: [{ label: 'All', value: 'all' }],
+  custGroup: [],
 };
