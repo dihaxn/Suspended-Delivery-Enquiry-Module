@@ -21,7 +21,7 @@ export const SuspendedDeliveryFilters: React.FC = () => {
         
         const methods = useForm({
           defaultValues: {
-            custGroup: custGroupList.find((item) => item.value === filter.custGroup) || { label: '', value: '' },
+            custGroup: custGroupList.find((item) => item.value === filter.custGroup) || { label: 'All', value: 'all' },
             originator: commonFilters.originator,
             proxyUser: commonFilters.proxyUser
           },
