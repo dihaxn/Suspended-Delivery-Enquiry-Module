@@ -1,10 +1,7 @@
 import { STORE, useStoreSelector } from '@cookers/store';
-import { Badge, Button, Flex, Heading, ScrollArea, Separator, Text } from '@radix-ui/themes';
+import { Badge, Flex, Heading, ScrollArea, Separator, Text } from '@radix-ui/themes';
 import React, { useEffect, useMemo, useState } from 'react';
-import { FormButton } from '@cookers/ui';
-import { fetchSuspendedDeliveryViewData } from '../../queries';
 import { SuspendedDeliveryList } from '@cookers/models';
-import { colorSelectorByStatusName } from '../util';
 
 
 export const SuspendedDeliveryQuickView: React.FC = () => {
