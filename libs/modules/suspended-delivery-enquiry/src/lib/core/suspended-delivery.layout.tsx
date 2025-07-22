@@ -14,8 +14,6 @@ export function SuspendedDeliveryLayout() {
 
 export default SuspendedDeliveryLayout;
 
-
-
 const useSuspendedDeliveryDataQuery = () => {
   const dispatch = useDispatch();
   const { SuspendedDeliveryMasterData } = useSuspendedDeliveryMasterDataQuery();
