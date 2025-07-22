@@ -56,8 +56,8 @@ export const SuspendedDeliveryQuickView: React.FC = () => {
       <Heading size="2">Suspended Delivery Details</Heading>
           {renderField('Customer Name', quickview?.customerName)}
           {renderField('Cust Group', quickview?.custGroup)}
-          {renderField('ETA for return - Fresh', quickview?.ETAfresh?.toString())}
-          {renderField('ETA for return - UCO', quickview?.ETAUCO?.toString())}
+          {renderField('ETA for return - Fresh', quickview?.ETAFresh)}
+          {renderField('ETA for return - UCO', quickview?.ETAUCO)}
           {renderField('BDM Code', quickview?.BDMCode)}         
           {renderField('Carrier Code', quickview?.carrierCode)}
           {renderField('Contact', quickview?.contact)}

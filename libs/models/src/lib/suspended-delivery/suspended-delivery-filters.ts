@@ -4,8 +4,8 @@ export interface SuspendedDeliveryFilters {
   customerCode: string;
   customerName: string;
   custGroup: string;
-  ETAfresh: Date;
-  ETAUCO:Date;
+  ETAFresh: string;
+  ETAUCO:string;
   BDMCode: string;
   carrierCode: string;
   contact: string;
@@ -21,8 +21,8 @@ export const initialSuspendedDeliveryFilterState: SuspendedDeliveryFilters = {
   customerCode: '',
   customerName: '',
   custGroup: 'All',
-  ETAfresh: new Date(),
-  ETAUCO: new Date(),
+  ETAFresh: '',
+  ETAUCO:'',
   BDMCode: '',
   carrierCode: '',
   contact: '',

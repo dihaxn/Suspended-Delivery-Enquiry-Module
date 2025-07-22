@@ -66,14 +66,14 @@ const suspendedDeliverySlice = createSlice({
     setQuickview(state, action: PayloadAction<SuspendedDeliveryList>) {
       state.quickview = action.payload;
     },
-     suspendedDeliveryFilter: (state, action) => {
-          state.filter = action.payload;
-        },
+    suspendedDeliveryFilter: (state, action) => {
+      state.filter = action.payload;
+    },
   },
   
 });
 
-// Exports
+
 export const {
   setSuspendedDeliveryFilter,
   resetSuspendedDeliveryFilter,
